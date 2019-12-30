@@ -1,0 +1,4 @@
+TestCase_Id,status,errorInfo,message
+TC_001,TRUE,Fabric Category Updated Sucessfully,
+TC_002,FALSE,Surplus Category Code already exist.,
+TC_003,,,Internal server error

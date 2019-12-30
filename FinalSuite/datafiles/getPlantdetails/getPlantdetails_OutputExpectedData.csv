@@ -1,0 +1,2 @@
+TestCase_Id,plant_code,status,errInfo
+Tc_001,plan{{XS}},TRUE,

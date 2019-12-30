@@ -1,0 +1,3 @@
+TestCase_Id,department_code,status,is_active
+TC_001,DEP{{XS}},TRUE,TRUE
+TC_002,,FALSE,

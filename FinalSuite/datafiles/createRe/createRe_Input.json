@@ -1,0 +1,9 @@
+{
+  
+  "reason_code": "demo",
+  "reason_description": "ink",
+  "is_external": true,
+  "isActive": true,
+  "department_type": "planning",
+  "reason_group": "Rejection"
+}

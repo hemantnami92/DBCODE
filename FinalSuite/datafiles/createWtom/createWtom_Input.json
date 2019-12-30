@@ -1,0 +1,6 @@
+{
+  "workstation_type_id": "string",
+  "operation_code": [
+    "string"
+  ]
+}

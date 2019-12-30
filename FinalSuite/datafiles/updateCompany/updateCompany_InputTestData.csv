@@ -1,0 +1,3 @@
+TestCase_Id,company_code,company_name
+TC_001,C{{XS}},Testcmp
+TC_002,{{XS}}5,demo1234

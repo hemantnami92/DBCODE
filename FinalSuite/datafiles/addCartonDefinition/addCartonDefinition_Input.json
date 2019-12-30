@@ -1,0 +1,26 @@
+{
+  "masterCartonInfo": [
+    {
+      "master_po_number": "string",
+      "master_carton_id": "string",
+      "carton_name": "string",
+      "carton_count": 0,
+      "features": "string",
+      "polybagTypes": [
+        {
+          "polybag_type_id": "string",
+          "polybagTypeDetails": [
+            {
+              "master_po_details_id": "string",
+              "style": "string",
+              "color": "string",
+              "size": "string",
+              "quantity": 0
+            }
+          ],
+          "polybag_count": 0
+        }
+      ]
+    }
+  ]
+}

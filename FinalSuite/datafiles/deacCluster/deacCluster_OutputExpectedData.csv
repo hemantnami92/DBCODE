@@ -1,0 +1,3 @@
+TestCase_Id,errorInfo,status
+Tc_001,,TRUE
+Tc_002,Cluster does not exist to delete,FALSE

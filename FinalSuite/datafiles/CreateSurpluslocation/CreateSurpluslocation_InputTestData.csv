@@ -1,0 +1,5 @@
+TestCase_Id,surplus_location_code,surplus_location_description,surplus_location_category_id,isActive
+TC_001,locationT{{XS}},surplusstore{{XS}},6b9832c3-0c69-4e7f-873e-07089a163d13,TRUE
+TC_002,locationT01,surplusstore{{XS}},6b9832c3-0c69-4e7f-873e-07089a163d13,TRUE
+TC_003,,surplusstore{{XS}},6b9832c3-0c69-4e7f-873e-07089a163d13,TRUE
+TC_004,location5432{{XS}},surplusstore{{XS}},6b9832c3-0c69-4e7-873e-07089a163d13,TRUE

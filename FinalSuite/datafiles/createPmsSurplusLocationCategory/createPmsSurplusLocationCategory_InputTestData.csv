@@ -1,0 +1,3 @@
+TestCase_Id,surplus_location_category_code,surplus_location_category_description,isActive
+TC_001,Test2{{XS}},Unkown loc,TRUE
+TC_002,SST3{{XS}},,TRUE

@@ -1,0 +1,5 @@
+TestCase_Id,department_code,department_name,department_type,sla,is_active,plant_code,date_of_birth
+TC_001,DEP{{XS}},EMB{{XS}},stitching,3,TRUE,PL{{XS}},8/8/1995
+TC_002,DEP{{XS}},EMB{{XS}},stitching,3,TRUE,PL{{XS}},8/8/1995
+TC_003,DEP{{XS}},EMB{{XS}},stitching,3,TRUE,Testp110,8/8/1995
+TC_004,DEP{{XS}},EMB1{{XS}},making,3,TRUE,QCI,8/8/1995

@@ -1,0 +1,3 @@
+TestCase_Id,errorInfo,message
+TC_001,Category not found.,
+TC_002,,Internal server error

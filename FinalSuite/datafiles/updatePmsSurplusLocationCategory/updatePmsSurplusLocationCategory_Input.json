@@ -1,0 +1,6 @@
+{
+  "surplus_location_category_id": "string",
+  "surplus_location_category_code": "string",
+  "surplus_location_category_description": "string",
+  "isActive": true
+}

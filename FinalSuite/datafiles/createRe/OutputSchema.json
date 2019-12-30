@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "reason_id": "800b706e-aef1-4be6-abd6-d4f8cb18a139",
+      "reason_code": "123654",
+      "reason_description": "ink",
+      "is_external": true,
+      "isActive": true,
+      "reason_group": "Rejection",
+      "departmentType": {
+        "department_type": "planning"
+      }
+    }
+  ],
+  "status": true
+}

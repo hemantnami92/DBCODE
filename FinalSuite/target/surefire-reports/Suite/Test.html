@@ -1,0 +1,1984 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/49/4</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 27 12:18:12 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7156 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment()'><b>CreateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_001, {"department_code":"DEP401","is_active":true,"gender":"string","department_type":"stitching1","date_of_birth":"8/8/1995","land_line_no":"string","department_name":"EMB401","mobile_no":"string","sla":3,"last_name":"string","middle_name":"string","plant_code":"PL401","first_name":"string","email":"string"}, {status=true}, {is_active=data/is_active, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace261395919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace261395919'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment()'><b>CreateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_002, {"department_code":"DEP401","is_active":true,"gender":"string","department_type":"stitching1","date_of_birth":"8/8/1995","land_line_no":"string","department_name":"EMB401","mobile_no":"string","sla":3,"last_name":"string","middle_name":"string","plant_code":"PL401","first_name":"string","email":"string"}, {status=true}, {is_active=data/is_active, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1138723713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138723713'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation()'><b>CreateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_001, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a163d13","surplus_location_description":"surplusstore401","isActive":true,"surplus_location_code":"locationT401"}, {errorInfo=Success, code=, isActive=true, status=true}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Success&apos; in response json failed expected [Success] but found [Surplus Location Category Doesnot exist.]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1984163404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1984163404'><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Success&apos; in response json failed expected [Success] but found [Surplus Location Category Doesnot exist.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation()'><b>CreateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_002, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a163d13","surplus_location_description":"surplusstore401","isActive":true,"surplus_location_code":"locationT01"}, {errorInfo=Surplus Location Code already exist., code=, isActive=, status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Code already exist.&apos; in response json failed expected [Surplus Location Code already exist.] but found [Surplus Location Category Doesnot exist.]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1691803103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1691803103'><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Code already exist.&apos; in response json failed expected [Surplus Location Code already exist.] but found [Surplus Location Category Doesnot exist.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.GetDepartment()'><b>GetDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_001, {"department_code":"DEP401"}, {department_code=DEP401, is_active=true, status=true}, {department_code=data/department_code, is_active=data/is_active, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.GetDepartment(Department.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561949452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561949452'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Department.GetDepartment(Department.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection()'><b>UpdateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_001, {"uid_country":"string","gender":"string","contact_uid":"string","section_name":"Section401401","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":"DEP401","mobile_no":"string","last_name":"string","middle_name":"string","ref_uid":"string","section_code":"Section401","first_name":"string","email":"string","user_uid":"string"}, {status=true}, {status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780956291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace780956291'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection()'><b>UpdateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_003, {"uid_country":"string","gender":"string","contact_uid":"string","section_name":"Section001","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":"DEP401","mobile_no":"string","last_name":"string","middle_name":"string","ref_uid":"string","section_code":"Section4401","first_name":"string","email":"string","user_uid":"string"}, {status=true}, {status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793647647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793647647'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation()'><b>UpdateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_001, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a163d13","surplus_location_description":"surplusstore","isActive":true,"surplus_location_code":"location543210","surplus_location_id":"c191c8ff-a8e1-4404-b55c-fafc30f7d5a8"}, {errorInfo=Surplus Location Updated Sucessfully, code=, isActive=true, status=true}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Updated Sucessfully&apos; in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace602292700", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace602292700'><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Updated Sucessfully&apos; in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation()'><b>UpdateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_002, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a163d13","surplus_location_description":"surplusstore","isActive":true,"surplus_location_code":"location543210","surplus_location_id":"c191c8ff-a8e1-4404-b55c-fafc30f7d5a8"}, {errorInfo=Surplus Location Updated Sucessfully, code=, isActive=, status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Updated Sucessfully&apos; in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace362183899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace362183899'><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;Surplus Location Updated Sucessfully&apos; in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.createPlant()'><b>createPlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: Tc_001, {"uid_country":"string","country":"string","gender":"string","land_line_no":"string","date_of_birth":"5/5/1999","mobile_no":"string","last_name":"string","middle_name":"string","plant_type":"PlantTy401","location_type":"loc401","long":"string","ref_uid":"string","zipcode":"string","land_mark":"string","door_no":"string","address_line_1":"string","plant_code":"PL401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string","cluster_code":"CL401","plant_name":"PLNAME401"}, {plant_code=PL401, errInfo=, status=true}, {country=data/country, gender=data/gender, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, long=data/long, plant_ref_code=data/plant_ref_code, plant_start_time=data/plant_start_time, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, plant_code=data/plant_code, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, lat=data/lat, email=data/email, cluster_code=data/cluster_code, is_active=data/is_active, land_line_no=data/land_line_no, parent_plant_code=data/parent_plant_code, activated_date=data/activated_date, last_name=data/last_name, plant_end_time=data/plant_end_time, middle_name=data/middle_name, plant_type=data/plant_type, location_type=data/location_type, zipcode=data/zipcode, errInfo=errInfo, plant_name=data/plant_name, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.createPlant(Plant.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1476656325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1476656325'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.createPlant(Plant.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe()'><b>createRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_001, {"reason_code":"Rea401","reason_group":"Rejection","is_external":true,"reason_description":"sample","isActive":true,"department_type":"planning"}, {reason_code=Rea401, errInfo=, status=true}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/department_type/department_type, reason_description=data/reason_description, status=status, reason_id=data/reason_id}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe(Reasons.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace468564894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace468564894'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe(Reasons.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.createSubProductionOrder()'><b>createSubProductionOrder</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.createSubProductionOrder(PPS.java:414)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1764758626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1764758626'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.createSubProductionOrder(PPS.java:414)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_001, {"workstation_code":"","section_code":"Section401","activated_date":"string","isActive":true,"workstation_description":"Sample401","workstation_type_id":"string","deactivated_date":"string"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace617311224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace617311224'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_002, {"workstation_code":"WRKS401","section_code":"","activated_date":"string","isActive":true,"workstation_description":"Sample401","workstation_type_id":"string","deactivated_date":"string"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace627735326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace627735326'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_003, {"workstation_code":"WRKS401","section_code":"Section401","activated_date":"string","isActive":true,"workstation_description":"Sample401","workstation_type_id":"string","deactivated_date":"string"}, {status=true}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034917598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1034917598'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: TC_001, {"workstation_code":"","section_code":"Section401","activated_date":"string","isActive":true,"workstation_description":"Sample401","deactivated_date":"string"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1833619578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1833619578'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: TC_002, {"workstation_code":"WRKS401","section_code":"","activated_date":"string","isActive":true,"workstation_description":"Sample401","deactivated_date":"string"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1594225557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1594225557'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation()'><b>createWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: TC_003, {"workstation_code":"WRKS401","section_code":"Section401","activated_date":"string","isActive":true,"workstation_description":"Sample401","deactivated_date":"string"}, {status=true}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358925271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358925271'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_002, {"workstation_type_description":"Testing","department_type":"planning","workstation_type_code":"planning401"}, {errInfo=, workstation_type_code=PLANNING401}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1288116705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1288116705'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_002, {"workstation_type_description":"Testing","department_type":"planning","workstation_type_code":"planning401"}, {errInfo=, workstation_type_code=PLANNING401}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1974915155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974915155'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":"planning401"}, {errInfo=The department type doesnt exist, workstation_type_code=}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace532336768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532336768'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_003, {"workstation_type_description":"Testing","department_type":"planning","workstation_type_code":"planning1401"}, {errInfo=, workstation_type_code=PLANNING1401}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622290815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1622290815'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":"planning401"}, {errInfo=The department type doesnt exist, workstation_type_code=}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1842634598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842634598'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstationT()'><b>createWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_003, {"workstation_type_description":"Testing","department_type":"planning","workstation_type_code":"planning1401"}, {errInfo=, workstation_type_code=PLANNING1401}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace512148559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace512148559'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom()'><b>createWtom</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_001, {"operation_code":["10","15"]}, {status=true}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace698359369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace698359369'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWtom()'><b>createWtom</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_001, {"operation_code":["10","15"]}, {status=true}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730642874", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730642874'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom()'><b>createWtom</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_002, {"operation_code":["10"]}, {status=true}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace73786971", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace73786971'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.createWtom()'><b>createWtom</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_002, {"operation_code":["10"]}, {status=true}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1797665338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1797665338'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype()'><b>createdepartmenttype</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.DepartmentType<br>Parameters: TC_001, {"department_type":"stitching1"}, {status=true}, {department_type=data/department_type, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1121065338", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1121065338'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.DepartmentType@28d25987</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype()'><b>createdepartmenttype</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.DepartmentType<br>Parameters: TC_002, {"department_type":"Packing2"}, {status=true}, {department_type=data/department_type, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace512300911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace512300911'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.DepartmentType@28d25987</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation()'><b>deActivateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_001, {"workstation_id":"fe42f216-9961-41e3-a598-c4460e037a94"}, {errorInfo=, status=true}, {errorInfo=errorInfo, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace974162225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace974162225'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation()'><b>deActivateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_002, {"workstation_id":"f884a94f-0c94-48e5-ab8c"}, {errorInfo=Workstation not found., status=false}, {errorInfo=errorInfo, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace835741387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace835741387'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.deactRe()'><b>deactRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_001, {"reason_id":"62c47dee-7bd4-486e-a396-6e5c8f120437"}, {errInfo=, status=true}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.deactRe(Reasons.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1446913356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1446913356'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.deactRe(Reasons.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.deactivateSurpluslocation()'><b>deactivateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_001, {"surplus_location_code":"locationT401"}, {errorInfo=successfully deactivated., status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;successfully deactivated.&apos; in response json failed expected [successfully deactivated.] but found [surplusLocation not found.]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.deactivateSurpluslocation(Surplus.java:96)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace869939917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace869939917'><pre>java.lang.AssertionError: Verification of &apos;errorInfo&apos; with value &apos;successfully deactivated.&apos; in response json failed expected [successfully deactivated.] but found [surplusLocation not found.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.deactivateSurpluslocation(Surplus.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany()'><b>getCompany</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Sample<br>Parameters: Tc_001, {"company_code":401}, {errorInfo=, company_code=, status=true}, {errorInfo=errorInfo, company_code=data/company_code, status=status}</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1656906450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1656906450'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Sample@d8355a8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany()'><b>getCompany</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Sample<br>Parameters: Tc_002, {"company_code":"Test401"}, {errorInfo=, company_code=Test401, status=false}, {errorInfo=errorInfo, company_code=data/company_code, status=status}</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726347104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726347104'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Sample@d8355a8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.getRe()'><b>getRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_001, {"reason_id":"56934b65-4e94-4cbb-ba93-fe15cf5fc99d"}, {errInfo=, status=true}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.getRe(Reasons.java:121)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace146477454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace146477454'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.getRe(Reasons.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation()'><b>getSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_001, {"surplus_location_code":"demo123"}, {errorInfo=, surplus_location_code=demo123, status=true}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace860726766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace860726766'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation()'><b>getSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_003, {"surplus_location_code":""}, {errorInfo=, surplus_location_code=, status=true}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace215860771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215860771'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.getWorkstationByWorkstaioncode()'><b>getWorkstationByWorkstaioncode</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_001, {"workstation_id":"983dc0e1-12d4-456e-a8ac-7e0125fd7966"}, {status=true}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.getWorkstationByWorkstaioncode(Workstation.java:79)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985727164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985727164'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.getWorkstationByWorkstaioncode(Workstation.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest()'><b>postSampleTest</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Company<br>Parameters: TC_002, {"country":"string","gender":"string","land_line_no":"string","mobile_no":"78985","last_name":"string","middle_name":"string","location_type":"string","long":"string","zipcode":"89789","land_mark":"string","company_name":"COMPANY401","door_no":"string","address_line_1":"string","company_code":" ","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string"}, {company_code=, company_name=, status=false}, {company_code=data/company_code, company_name=data/company_name, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;false&apos; in response json failed expected [false] but found [true]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest(Company.java:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1381191203", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381191203'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;false&apos; in response json failed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest(Company.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Company@59fa1d9b</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.productionOrderCreation()'><b>productionOrderCreation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"po_details_size_quantities":[{"master_po_details_id":"496af74f-44ce-4f25-872f-75ce3e76d40a","quantity":0,"color":"string","size":"string","style":"string"}],"master_po_details_id":"496af74f-44ce-4f25-872f-75ce3e76d40a","master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f","po_description":"string","reference_fg_color":"string","color_ratios":[{"master_po_details_id":"496af74f-44ce-4f25-872f-75ce3e76d40a","color":"string","style":"string","ratio":0}],"po_type":"Normal"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.productionOrderCreation(PPS.java:331)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1208887020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1208887020'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.productionOrderCreation(PPS.java:331)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.updatePlant()'><b>updatePlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: TC_001, {"country":"string","gender":"string","contact_uid":"6bd120de-96db-4769-ad0a-291fd6e2e00c","date_of_birth":"5/5/1999","mobile_no":"string","location_uid":"66563695-bb50-4c25-9692-c9a3067c8148","long":"string","ref_uid":"string","land_mark":"string","door_no":"string","address_line_1":"string","plant_code":"PL401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string","cluster_code":"CL401","uid_country":"string","land_line_no":"string","address_uid":"8134c6e4-fee1-41ed-a298-a1c3dfb59e1f","last_name":"string","middle_name":"string","plant_type":"sample5","location_type":"string","zipcode":"string","plant_name":"PLANT401"}, {plant_code=PL401, errInfo=, status=true}, {country=data/country, gender=data/gender, contact_uid=data/contact_uid, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, location_uid=data/location_uid, long=data/long, plant_ref_code=data/plant_ref_code, plant_start_time=data/plant_start_time, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, plant_code=data/plant_code, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, lat=data/lat, email=data/email, cluster_code=data/cluster_code, is_active=data/is_active, land_line_no=data/land_line_no, parent_plant_code=data/parent_plant_code, address_uid=data/address_uid, activated_date=data/activated_date, last_name=data/last_name, plant_end_time=data/plant_end_time, middle_name=data/middle_name, plant_type=data/plant_type, location_type=data/location_type, zipcode=data/zipcode, errInfo=errInfo, plant_name=data/plant_name, status=status, user_uid=data/user_uid}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.updatePlant(Plant.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538951966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538951966'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.updatePlant(Plant.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe()'><b>updateRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_001, {"reason_code":"test12","reason_group":"Rejection","reason_description":"test12","department_type":"planning","reason_id":"6c866024-b0c0-4dbc-bc69-c9b036eb8c28"}, {reason_code=test12, reason_group=Rejection, errInfo=, status=true}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe(Reasons.java:101)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace799602073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace799602073'><pre>java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe(Reasons.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_001, {"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3900000","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908350756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908350756'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_003, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace229198062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace229198062'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_004, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace115817364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace115817364'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_007, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"bc06c472-e364-4852-89dd","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace394314038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394314038'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_009, {"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td><div><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907198316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1907198316'><pre>java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment()'><b>CreateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_003, {"department_code":"DEP401","is_active":true,"gender":"string","department_type":"stitching1","date_of_birth":"8/8/1995","land_line_no":"string","department_name":"EMB401","mobile_no":"string","sla":3,"last_name":"string","middle_name":"string","plant_code":"Testp110","first_name":"string","email":"string"}, {status=false}, {is_active=data/is_active, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment()'><b>CreateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_004, {"department_code":"DEP401","is_active":true,"gender":"string","department_type":"making","date_of_birth":"8/8/1995","land_line_no":"string","department_name":"EMB1401","mobile_no":"string","sla":3,"last_name":"string","middle_name":"string","plant_code":"QCI","first_name":"string","email":"string"}, {status=false}, {is_active=data/is_active, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.CreatePO()'><b>CreatePO</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"systematic_po":false,"po_description":"Test_po","master_po_type":"normal","moDetails":[{"z_feature_desc":"string","color":"string","destination":"string","mo_number":"string","z_code":"string","mo_status":"string","mo_quantity":0,"schedule":"string","vpo":"string","size":"string","order_quantity":0,"packing_method":"string","style":"string","operation_sequence":"string"}]}, {status=true}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.CreateSection()'><b>CreateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_001, {"gender":"string","section_name":"Section11401","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":"DEP401","mobile_no":"string","section_code":"Section401","last_name":"string","middle_name":"string","first_name":"string","email":"string"}, {status=false}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.CreateSection()'><b>CreateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_002, {"gender":"string","section_name":"string","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":123,"mobile_no":"string","section_code":123,"last_name":"string","middle_name":"string","first_name":"string","email":"string"}, {status=}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.CreateSection()'><b>CreateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_003, {"gender":"string","section_name":"Section001","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":"DEP401","mobile_no":"string","section_code":"Section4401","last_name":"string","middle_name":"string","first_name":"string","email":"string"}, {status=false}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation()'><b>CreateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_003, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a163d13","surplus_location_description":"surplusstore401","isActive":true,"surplus_location_code":""}, {errorInfo=, code=500, isActive=, status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation()'><b>CreateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_004, {"surplus_location_category_id":"6b9832c3-0c69-4e7-873e-07089a163d13","surplus_location_description":"surplusstore401","isActive":true,"surplus_location_code":"location5432401"}, {errorInfo=, code=500, isActive=, status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.GetDepartment()'><b>GetDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: TC_002, {"department_code":"D401"}, {department_code=, is_active=, status=false}, {department_code=data/department_code, is_active=data/is_active, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.UpdateDepartment()'><b>UpdateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: Tc_001, {"department_code":"string","uid_country":"string","is_active":true,"gender":"string","contact_uid":"string","department_type":"stitching1","date_of_birth":"string","land_line_no":"string","department_name":"DEP401","mobile_no":"string","sla":"string","last_name":"string","middle_name":"string","ref_uid":"string","plant_code":"string","first_name":"string","email":"string","user_uid":"string"}, {STATUS=true}, {department_type=data/department_type, department_name=data/department_name, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Department.UpdateDepartment()'><b>UpdateDepartment</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Department<br>Parameters: Tc_002, {"department_code":"string","uid_country":"string","is_active":true,"gender":"string","contact_uid":"string","department_type":"demo1234","date_of_birth":"string","land_line_no":"string","department_name":401,"mobile_no":"string","sla":"string","last_name":"string","middle_name":"string","ref_uid":"string","plant_code":"string","first_name":"string","email":"string","user_uid":"string"}, {STATUS=false}, {department_type=data/department_type, department_name=data/department_name, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Department@523884b2</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection()'><b>UpdateSection</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Section<br>Parameters: TC_002, {"uid_country":"string","gender":"string","contact_uid":"string","section_name":"string","date_of_birth":"8/8/1995","land_line_no":"string","departmentCode":123,"mobile_no":"string","last_name":"string","middle_name":"string","ref_uid":"string","section_code":123,"first_name":"string","email":"string","user_uid":"string"}, {status=false}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Section@46d56d67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation()'><b>UpdateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_003, {"surplus_location_category_id":"6b9832c3-0c69-4e7f-873e-07089a1613","surplus_location_description":"surplusstore","isActive":true,"surplus_location_code":"location54321","surplus_location_id":"bec46162-5854-4544-b679-bd27f66e4cf0"}, {errorInfo=, code=500, isActive=, status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation()'><b>UpdateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_004, {"surplus_location_category_id":"","surplus_location_description":"","isActive":"","surplus_location_code":"","surplus_location_id":"c191c8ff-a8e1-4404-b55c-fafc30f7d5a8"}, {errorInfo=, code=, isActive=, status=false}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.createCluster()'><b>createCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_001, {"uid_country":"string","country":"string","cluster_name":"Test401","gender":"string","date_of_birth":"2/3/2012","land_line_no":"string","mobile_no":"string","last_name":"string","activated_date":"1992-05-01","middle_name":"string","location_type":"string","long":"string","zipcode":"string","corporate_code":"C401","land_mark":"string","door_no":"string","address_line_1":"string","address_line_2":"string","state":"string","first_name":"string","email":"string","lat":"string","cluster_code":"CL401"}, {cluster_name=Test401, errorInfo=, cluster_code=CL401, status=true}, {cluster_name=data/cluster_name, country=data/country, gender=data/gender, date_of_birth=data/date_of_birth, land_line_no=data/land_line_no, mobile_no=data/mobile_no, last_name=data/last_name, middle_name=data/middle_name, location_type=data/location_type, long=data/long, corporate_code=data/corporate_code, zipcode=data/zipcode, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, cluster_code=data/cluster_code, lat=data/lat, email=data/email, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.createCluster()'><b>createCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_002, {"uid_country":"string","country":"string","cluster_name":"","gender":"string","date_of_birth":"2/4/2012","land_line_no":"string","mobile_no":"string","last_name":"string","activated_date":"1992-05-01","middle_name":"string","location_type":"string","long":"string","zipcode":"string","corporate_code":"Testin","land_mark":"string","door_no":"string","address_line_1":"string","address_line_2":"string","state":"string","first_name":"string","email":"string","lat":"string","cluster_code":"CL401"}, {cluster_name=, errorInfo=Company Does not Exist, cluster_code=, status=}, {cluster_name=data/cluster_name, country=data/country, gender=data/gender, date_of_birth=data/date_of_birth, land_line_no=data/land_line_no, mobile_no=data/mobile_no, last_name=data/last_name, middle_name=data/middle_name, location_type=data/location_type, long=data/long, corporate_code=data/corporate_code, zipcode=data/zipcode, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, cluster_code=data/cluster_code, lat=data/lat, email=data/email, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.createPlant()'><b>createPlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: Tc_002, {"uid_country":"string","country":"string","gender":"string","land_line_no":"string","date_of_birth":"5/5/1999","mobile_no":"string","last_name":"string","middle_name":"string","plant_type":"sample5","location_type":"sample9","long":"string","ref_uid":"string","zipcode":"string","land_mark":"string","door_no":"string","address_line_1":"string","plant_code":"Testp1401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string","cluster_code":"Testin","plant_name":"sample1"}, {plant_code=, errInfo=cluster not exist., status=false}, {country=data/country, gender=data/gender, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, long=data/long, plant_ref_code=data/plant_ref_code, plant_start_time=data/plant_start_time, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, plant_code=data/plant_code, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, lat=data/lat, email=data/email, cluster_code=data/cluster_code, is_active=data/is_active, land_line_no=data/land_line_no, parent_plant_code=data/parent_plant_code, activated_date=data/activated_date, last_name=data/last_name, plant_end_time=data/plant_end_time, middle_name=data/middle_name, plant_type=data/plant_type, location_type=data/location_type, zipcode=data/zipcode, errInfo=errInfo, plant_name=data/plant_name, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe()'><b>createRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_002, {"reason_code":"Test001401","reason_group":"Rejection","is_external":true,"reason_description":"sample","isActive":true,"department_type":""}, {reason_code=, errInfo=Error while creating Reason, status=false}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/department_type/department_type, reason_description=data/reason_description, status=status, reason_id=data/reason_id}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe()'><b>createRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_003, {"reason_code":"Test001401","reason_group":"","is_external":true,"reason_description":"sample","isActive":true,"department_type":"Planning"}, {reason_code=, errInfo=Error while creating Reason, status=false}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/department_type/department_type, reason_description=data/reason_description, status=status, reason_id=data/reason_id}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.deactRe()'><b>deactRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_002, {"reason_id":"62c47pee-7bd4-486e-a396-6e5c8f120437"}, {errInfo=Error while reatreaving Reasons, status=}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.deactivateSurpluslocation()'><b>deactivateSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_002, {"surplus_location_code":"location54321H00"}, {errorInfo=surplusLocation not found., status=}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.getCluster()'><b>getCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_001, {"cluster_code":"CL401","is_active":true}, {errInfo=, cluster_code=CL401}, {errInfo=errInfo, cluster_code=data/cluster_code}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.getCluster()'><b>getCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_002, {"cluster_code":["{XS"],"is_active":true}, {errInfo=No Clusters Found, cluster_code=}, {errInfo=errInfo, cluster_code=data/cluster_code}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.getMasterAndSubPoSizeWiseQuantitiesByMasterPo()'><b>getMasterAndSubPoSizeWiseQuantitiesByMasterPo</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.getMasterPoDetails()'><b>getMasterPoDetails</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.getMasterPoStyleColorsDetails()'><b>getMasterPoStyleColorsDetails</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.getPlant()'><b>getPlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: Tc_001, {"plant_code":"P401"}, {plant_code=PLA401, errInfo=Plant code not found., status=false}, {plant_code=data/plant_code, errInfo=errInfo, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.getPlant()'><b>getPlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: Tc_002, {"plant_code":"PL401"}, {plant_code=PL401, errInfo=, status=true}, {plant_code=data/plant_code, errInfo=errInfo, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.getPo()'><b>getPo</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.getRe()'><b>getRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_002, {"reason_id":"56934b65-4e94-4cbb-ba93-fe15cf5fc99"}, {errInfo=Error while reatreaving Reasons, status=}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation()'><b>getSurpluslocation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Surplus<br>Parameters: TC_002, {"surplus_location_code":"demo12"}, {errorInfo=, surplus_location_code=, status=false}, {surplus_location_category_id=data/surplus_location_category_id, surplus_location_description=data/surplus_location_description, surplus_location_code=data/surplus_location_code, errorInfo=errorInfo, isActive=data/isActive, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Surplus@224edc67</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.getWorkstationByWorkstaioncode()'><b>getWorkstationByWorkstaioncode</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_002, {"workstation_id":"f884a94f-0c94-48e5-ab8c-cb80ac"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.getsubPoDetailsWithMasterPo()'><b>getsubPoDetailsWithMasterPo</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f"}, {errInfo=, status=true}, {errInfo=errInfo, master_po_number=data/master_po_number, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest()'><b>postSampleTest</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Company<br>Parameters: TC_001, {"country":"string","gender":"string","land_line_no":"string","mobile_no":"78985","last_name":"string","middle_name":"string","location_type":"string","long":"string","zipcode":"89789","land_mark":"string","company_name":"COMPANY401","door_no":"string","address_line_1":"string","company_code":"C401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string"}, {company_code=C401, company_name=COMPANY401, status=true}, {company_code=data/company_code, company_name=data/company_name, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Company@59fa1d9b</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest()'><b>postSampleTest</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Company<br>Parameters: TC_003, {"country":"string","gender":"string","land_line_no":"string","mobile_no":"78985","last_name":"string","middle_name":"string","location_type":"string","long":"string","zipcode":"89789","land_mark":"string","company_name":"COMPANY401","door_no":"string","address_line_1":"string","company_code":"C401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string"}, {company_code=, company_name=, status=false}, {company_code=data/company_code, company_name=data/company_name, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Company@59fa1d9b</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.updateCluster()'><b>updateCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_001, {"country":"string","gender":"string","contact_uid":"42c11cdf-d9bb-45c9-aed9-55f1a5f350ba","date_of_birth":"2/3/2012","mobile_no":"string","isActive":true,"location_uid":"b084b758-36b7-4888-89ed-ac664cd724c7","ref_uid":"string","long":"string","land_mark":"string","door_no":"string","address_line_1":"string","address_line_2":"string","state":"string","first_name":"string","email":"string","lat":"string","cluster_code":"CL401","uid_country":"string","cluster_name":"Test1234","land_line_no":"string","address_uid":"451cbd12-b4f7-4d4f-87f0-f4287e4e6913","last_name":"string","activated_date":"1999-05-08","middle_name":"string","location_type":"string","zipcode":"string","corporate_code":"C401","user_uid":"4661697b-383b-48db-a616-041dfd216be3"}, {cluster_name=Test1234, errorInfo=, cluster_code=CL401}, {country=data/country, gender=data/gender, contact_uid=data/contact_uid, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, location_uid=data/location_uid, long=data/long, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, cluster_code=data/cluster_code, lat=data/lat, email=data/email, cluster_name=data/cluster_name, land_line_no=data/land_line_no, address_uid=data/address_uid, last_name=data/last_name, middle_name=data/middle_name, location_type=data/location_type, corporate_code=data/corporate_code, zipcode=data/zipcode, status=status, user_uid=data/user_uid}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Cluster.updateCluster()'><b>updateCluster</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Cluster<br>Parameters: TC_002, {"country":"string","gender":"string","contact_uid":"42c11cdf-d9bb-45c9-aed9-55f1a5f350ba","date_of_birth":"2/4/2012","mobile_no":"string","isActive":true,"location_uid":"b084b758-36b7-4888-89ed-ac664cd724c7","ref_uid":"string","long":"string","land_mark":"string","door_no":"string","address_line_1":"string","address_line_2":"string","state":"string","first_name":"string","email":"string","lat":"string","cluster_code":"same","uid_country":"string","cluster_name":"","land_line_no":"string","address_uid":"451cbd12-b4f7-4d4f-87f0-f4287e4e6913","last_name":"string","activated_date":"1999-05-08","middle_name":"string","location_type":"string","zipcode":"string","corporate_code":"","user_uid":"4661697b-383b-48db-a616-041dfd216be3"}, {cluster_name=, errorInfo=Cluster  Does not Exist, cluster_code=}, {country=data/country, gender=data/gender, contact_uid=data/contact_uid, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, location_uid=data/location_uid, long=data/long, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, cluster_code=data/cluster_code, lat=data/lat, email=data/email, cluster_name=data/cluster_name, land_line_no=data/land_line_no, address_uid=data/address_uid, last_name=data/last_name, middle_name=data/middle_name, location_type=data/location_type, corporate_code=data/corporate_code, zipcode=data/zipcode, status=status, user_uid=data/user_uid}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Cluster@4501b7af</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Plant.updatePlant()'><b>updatePlant</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Plant<br>Parameters: TC_002, {"country":"string","gender":"string","contact_uid":"6bd120de-96db-4769-ad0a-291fd6e2e00c","date_of_birth":"5/5/1999","mobile_no":"string","location_uid":"66563695-bb50-4c25-9692-c9a3067c8148","long":"string","ref_uid":"string","land_mark":"string","door_no":"string","address_line_1":"string","plant_code":"Testpp1401","address_line_2":"string","state":"string","first_name":"string","lat":"string","email":"string","cluster_code":"Testin","uid_country":"string","land_line_no":"string","address_uid":"8134c6e4-fee1-41ed-a298-a1c3dfb59e1f","last_name":"string","middle_name":"string","plant_type":"sample5","location_type":"string","zipcode":"string","plant_name":"sample1401"}, {plant_code=, errInfo=Plant code not found., status=false}, {country=data/country, gender=data/gender, contact_uid=data/contact_uid, date_of_birth=data/date_of_birth, mobile_no=data/mobile_no, location_uid=data/location_uid, long=data/long, plant_ref_code=data/plant_ref_code, plant_start_time=data/plant_start_time, land_mark=data/land_mark, door_no=data/door_no, address_line_1=data/address_line_1, plant_code=data/plant_code, address_line_2=data/address_line_2, state=data/state, first_name=data/first_name, lat=data/lat, email=data/email, cluster_code=data/cluster_code, is_active=data/is_active, land_line_no=data/land_line_no, parent_plant_code=data/parent_plant_code, address_uid=data/address_uid, activated_date=data/activated_date, last_name=data/last_name, plant_end_time=data/plant_end_time, middle_name=data/middle_name, plant_type=data/plant_type, location_type=data/location_type, zipcode=data/zipcode, errInfo=errInfo, plant_name=data/plant_name, status=status, user_uid=data/user_uid}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Plant@14acaea5</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.PPS.updateProductionOrder()'><b>updateProductionOrder</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.PPS<br>Parameters: Tc_001, {"po_details_size_quantities":[{"master_po_details_id":"496af74f-44ce-4f25-872f-75ce3e76d40a","style":"tshirt","quantity":"100","color":"R","size":"M"}],"master_po_number":"f1499541-e235-4c8b-bb50-b69a259eb42f","po_description":"string","reference_fg_color":"string","color_ratios":[{"master_po_details_id":"496af74f-44ce-4f25-872f-75ce3e76d40a","style":"shirt","color":"g","ratio":0}],"po_type":"Normal"}, {status=true}, {status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.PPS@61832929</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe()'><b>updateRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_002, {"reason_code":"test12345","reason_group":"Rejection","reason_description":"demo","department_type":"","reason_id":"6c866024-b0c0-4dbc-bc69-c9b036eb8c28"}, {reason_code=, reason_group=, errInfo=Error while updating Reason, status=false}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe()'><b>updateRe</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Reasons<br>Parameters: Tc_003, {"reason_code":"","reason_group":"","reason_description":"","department_type":"planning","reason_id":""}, {reason_code=, reason_group=, errInfo=Reason Code for this department Type Already Exists!!!, status=false}, {reason_code=data/reason_code, reason_group=data/reason_group, department_type=data/departmentType/department_type, is_external=data/is_external, reason_description=data/reason_description, isActive=data/isActive, reason_id=data/reason_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Reasons@5b275dab</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_002, {"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-4795-414e-a1be-0d937cb16dbb","isActive":"","workstation_description":"string","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_005, {"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_006, {"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isActive":"","workstation_description":"cutting6445try3876","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: TC_008, {"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstationT()'><b>updateWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"planning147"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstationT()'><b>updateWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"planning147"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstationT()'><b>updateWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT<br>Parameters: Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_code":"planning001"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstationT()'><b>updateWorkstationT</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Workstation<br>Parameters: Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_code":"planning001"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}</td>
+<td></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Workstation@4c70fda8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.deActivateWorkstation()'><b>deActivateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	... 10 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279907302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1279907302'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 10 more
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.getWorkstationByWorkstaioncode()'><b>getWorkstationByWorkstaioncode</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	... 10 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2042430776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2042430776'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 10 more
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.Sample.updateCompany()'><b>updateCompany</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.Sample</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.sampleDataProvider(Sample.java:71)
+	... 10 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1985774037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1985774037'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.sampleDataProvider(Sample.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 10 more
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.Sample@d8355a8</td></tr>
+<tr>
+<td title='com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation()'><b>updateWorkstation</b><br>Test class: com.schemaxtech.testAutomationFrameworkTest.WorkstationT</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	... 10 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace774300669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace774300669'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:914)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.json.JSONObject.getNames(JSONObject.java:813)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:446)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:427)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.sampleDataProvider(WorkstationT.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 10 more
+</pre></div></td>
+<td>0</td>
+<td>com.schemaxtech.testAutomationFrameworkTest.WorkstationT@475530b9</td></tr>
+</table><p>
+</body>
+</html>

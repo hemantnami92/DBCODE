@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]">
+  <test thread-count="5" name="Command line test(failed)">
+    <classes>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.WorkstationT">
+        <methods>
+          <include name="updateWorkstation"/>
+          <include name="createWorkstationT" invocation-numbers="0 1 2"/>
+          <include name="getWorkstationByWorkstaioncode"/>
+          <include name="deActivateWorkstation"/>
+          <include name="createWtom" invocation-numbers="0 1"/>
+          <include name="createWorkstation" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.WorkstationT -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

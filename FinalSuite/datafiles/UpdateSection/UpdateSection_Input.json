@@ -1,0 +1,17 @@
+{
+  "section_code": "string",
+  "section_name": "string",
+  "departmentCode": "string",
+  "first_name": "string",
+  "middle_name": "string",
+  "last_name": "string",
+  "gender": "string",
+  "ref_uid": "string",
+  "uid_country": "string",
+  "date_of_birth": "string",
+  "land_line_no": "string",
+  "mobile_no": "string",
+  "email": "string",
+  "user_uid": "string",
+  "contact_uid": "string"
+}

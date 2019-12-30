@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods">
+  <test thread-count="5" name="Test" parallel="methods">
+    <classes>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.WorkstationT"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Workstation"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Surplus"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Plant"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Section"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Sample"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Company"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.DepartmentType"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Cluster"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Department"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Reasons"/>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.PPS"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

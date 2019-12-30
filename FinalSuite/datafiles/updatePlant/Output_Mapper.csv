@@ -1,0 +1,6 @@
+Attribute,AttributePath
+plant_code,data/plant_code
+plant_name,data/plant_name
+date_of_birth,data/date_of_birth
+address_uid,data/address_uid
+status,status

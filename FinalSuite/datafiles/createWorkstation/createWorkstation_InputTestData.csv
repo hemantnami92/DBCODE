@@ -1,0 +1,4 @@
+TestCase_Id,workstation_code,workstation_description,section_code
+TC_001,,Sample{{XS}},Section{{XS}}
+TC_002,WOKSTATIONRKS{{XS}},Sample{{XS}},
+TC_003,WOKSTATIONRKS{{XS}},Sample{{XS}},Section{{XS}}

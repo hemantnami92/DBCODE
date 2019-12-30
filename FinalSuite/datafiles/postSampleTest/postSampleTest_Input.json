@@ -1,0 +1,22 @@
+{
+  "company_code": "string",
+  "company_name": "string",
+  "first_name": "string",
+  "middle_name": "string",
+  "last_name": "string",
+  "gender": "string",
+  "door_no": "string",
+  "address_line_1": "string",
+  "address_line_2": "string",
+  "land_mark": "string",
+  "state": "string",
+  "country": "string",
+  "zipcode": "89789",
+  "location_type": "string",
+  "lat": "string",
+  "long": "string",
+  "land_line_no": "string",
+  "mobile_no": "78985",
+  "email": "string"
+
+}

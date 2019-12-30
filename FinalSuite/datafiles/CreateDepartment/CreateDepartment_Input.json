@@ -1,0 +1,18 @@
+{
+  "department_code": "string",
+  "department_name": "string",
+  "department_type": "string",
+  "sla": "string",
+  "is_active": true,
+  "plant_code": "string",
+  "first_name": "string",
+  "middle_name": "string",
+  "last_name": "string",
+  "gender": "string",
+
+  "date_of_birth": "string",
+  "land_line_no": "string",
+  "mobile_no": "string",
+  "email": "string",
+  
+}

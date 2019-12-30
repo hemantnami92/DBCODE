@@ -1,0 +1,10 @@
+Attribute,Attribute Path
+status,status
+workstation_code,data/workstation_code
+workstation_description,data/workstation_description
+activated_date,data/activated_date
+deactivated_date,data/deactivated_date
+isActive,isActive
+workstation_type_id,data/workstation_type_id
+section_code,data/section_code
+workstation_id,data/workstation_id

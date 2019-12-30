@@ -1,0 +1,3 @@
+TestCase_Id,company_code,company_name,errorInfo
+TC_001,TestComapny14{{XS}},companyname003,
+TC_002,,,Company code already exist.

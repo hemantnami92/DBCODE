@@ -1,0 +1,8 @@
+Attribute,Attribute Path
+surplus_location_category_id,data/surplus_location_category_id
+surplus_location_category_code,data/surplus_location_category_code
+surplus_location_category_description,data/surplus_location_category_description
+isActive,isActive
+created_date,data/created_date
+deactivated_date,data/deactivated_date
+status,status

@@ -1,0 +1,15 @@
+Attribute,Attribute Path
+mo_number,mo_number
+style,omsProductsInfos/style
+color_name,omsProductsInfos/color_name
+size_name,omsProductsInfos/size_name
+mo_quantity,mo_quantity
+omsMoOperations01,omsMoOperationss/op_mo_unique_ref_id
+product_sku1,omsProductsInfos/product_sku
+material_item_code1,omsMoItemss/material_item_code
+material_mo_unique_ref_id1,omsItemInfos/material_mo_unique_ref_id
+omsMoOperations02,omsMoOperationss/operation_code
+material_item_code02,omsItemInfos/material_item_code
+plant_code,plant_code
+po_number,po_number
+handled_po,handled_po

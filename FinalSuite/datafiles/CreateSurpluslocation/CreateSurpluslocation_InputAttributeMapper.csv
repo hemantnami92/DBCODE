@@ -1,0 +1,5 @@
+Attribute,Attribute_Path
+surplus_location_code,surplus_location_code
+surplus_location_description,surplus_location_description
+surplus_location_category_id,surplus_location_category_id
+isActive,isActive

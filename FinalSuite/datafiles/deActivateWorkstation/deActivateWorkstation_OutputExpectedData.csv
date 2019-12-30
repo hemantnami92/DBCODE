@@ -1,0 +1,3 @@
+TestCase_Id,status,errorInfo
+TC_001,TRUE,
+TC_002,FALSE,Workstation not found.

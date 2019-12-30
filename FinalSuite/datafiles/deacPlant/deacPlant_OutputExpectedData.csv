@@ -1,0 +1,3 @@
+TestCase_Id,plant_code,status,errInfo
+Tc_001,Testp{{XS}},TRUE,
+Tc_002,,FALSE,Plant code not found.

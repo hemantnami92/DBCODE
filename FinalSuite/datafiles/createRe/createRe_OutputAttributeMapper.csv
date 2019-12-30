@@ -1,0 +1,7 @@
+Attribute,AttributePath
+reason_code,data/reason_code
+reason_description,data/reason_description
+reason_group,data/reason_group
+department_type,data/department_type/department_type
+status,status
+reason_id,data/reason_id

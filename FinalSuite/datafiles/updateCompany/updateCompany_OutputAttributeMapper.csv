@@ -1,0 +1,4 @@
+Attribute,Attribute Path
+company_code,data/company_code
+company_name,data/company_name
+errorInfo,errorInfo

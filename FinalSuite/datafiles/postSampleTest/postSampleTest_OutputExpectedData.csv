@@ -1,0 +1,4 @@
+TestCase_Id,status,company_code
+TC_001,TRUE,C{{XS}}
+TC_002,FALSE,
+TC_003,FALSE,

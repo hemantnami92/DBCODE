@@ -1,0 +1,5 @@
+TestCase_Id,workstation_type_code,status,errInfo
+Tc_001,planning{{XS}},TRUE,
+Tc_002,planning2{{XS}},TRUE,
+Tc_003,,FALSE,The department type doesnt exist
+Tc_004,,FALSE,workstation type code is duplicated

@@ -1,0 +1,11 @@
+{
+  "workstation_code": "string",
+  "workstation_description": "string",
+  "workstation_type_id": "string",
+  "section_code": "string",
+  "capacity": 0,
+  "activated_date": "string",
+  "deactivated_date": "string",
+  "isActive": true,
+  "workstation_id": "string"
+}

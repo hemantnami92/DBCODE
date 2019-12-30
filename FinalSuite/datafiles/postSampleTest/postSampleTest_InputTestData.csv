@@ -1,0 +1,4 @@
+TestCase_Id,company_code,company_name
+TC_001,C{{XS}},COMPANY{{XS}}
+TC_002, ,COMPANY{{XS}}
+TC_003,C{{XS}},COMPANY{{XS}}

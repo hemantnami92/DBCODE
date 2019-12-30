@@ -1,0 +1,3 @@
+TestCase_Id,plant_code,plant_name,is_active,plant_ref_code,plant_type,location_type,cluster_code,date_of_birth
+Tc_001,PL{{XS}},PLNAME{{XS}},TRUE,PlantRef{{XS}},PlantTy{{XS}},loc{{XS}},CL{{XS}},5/5/1999
+Tc_002,Testp1{{XS}},sample1,TRUE,sample3,sample5,sample9,Testin,5/5/1999

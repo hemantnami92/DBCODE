@@ -1,0 +1,13 @@
+{
+  "status": true,
+  "data": {
+    "workstation_code": "wrs21",
+    "workstation_description": "stringstring",
+    "activated_date": "2019-07-18",
+    "deactivated_date": null,
+    "isActive": true,
+    "workstation_type_id": "ad258207-ae3f-4003-bb66-84ea79e8f970",
+    "section_code": "sec1",
+    "workstation_id": "c94534a1-4214-49fa-9229-59d0fe29ae77"
+  }
+}

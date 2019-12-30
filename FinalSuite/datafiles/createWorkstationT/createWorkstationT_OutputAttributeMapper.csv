@@ -1,0 +1,8 @@
+Attribute,Attribute_Path
+workstation_type_id,data/workstation_type_id
+workstation_type_description,data/workstation_type_description
+workstation_type_code,data/workstation_type_code
+department_type,data/department_type
+activated_date,data/activated_date
+status,status
+errInfo,errInfo

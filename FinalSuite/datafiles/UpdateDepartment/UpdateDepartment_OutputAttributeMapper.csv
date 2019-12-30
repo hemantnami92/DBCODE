@@ -1,0 +1,4 @@
+Attribute,Attribute Path
+status,status
+department_type,data/department_type
+department_name,data/department_name

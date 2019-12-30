@@ -1,0 +1,3 @@
+TestCase_Id,department_name,department_type
+Tc_001,DEP{{XS}},stitching1
+Tc_002,{{XS}},demo1234

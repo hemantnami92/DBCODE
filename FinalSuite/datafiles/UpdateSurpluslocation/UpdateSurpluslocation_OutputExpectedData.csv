@@ -1,0 +1,5 @@
+TestCase_Id,isActive,status,errorInfo,code
+TC_001,TRUE,TRUE,Surplus Location Updated Sucessfully,
+TC_002,,,Surplus Location Updated Sucessfully,
+TC_003,,,,500
+TC_004,,FALSE,,

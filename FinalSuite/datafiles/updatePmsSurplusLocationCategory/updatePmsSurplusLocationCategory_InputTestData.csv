@@ -1,0 +1,4 @@
+TestCase_Id,surplus_location_category_id,surplus_location_category_code,surplus_location_category_description,isActive
+TC_001,d92b4164-6eb7-4086-bbbf-78018a4f4796,slc1,stringrsdrgs888slcd,FALSE
+TC_002,6b9832c3-0c69-4e7f-873e-07089a163d13,7,string344332slcd,TRUE
+TC_003,string,string,string,TRUE

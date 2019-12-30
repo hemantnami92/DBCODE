@@ -1,0 +1,4 @@
+TestCase_Id,surplus_location_code,status,errorInfo
+TC_001,demo123,TRUE,
+TC_002,,FALSE,
+TC_003,,TRUE,

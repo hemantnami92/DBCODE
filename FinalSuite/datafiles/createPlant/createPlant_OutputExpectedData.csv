@@ -1,0 +1,3 @@
+TestCase_Id,plant_code,status,errInfo
+Tc_001,PL{{XS}},TRUE,
+Tc_002,,FALSE,cluster not exist.

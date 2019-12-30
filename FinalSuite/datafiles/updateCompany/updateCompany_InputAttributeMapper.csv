@@ -1,0 +1,25 @@
+Attribute,Attribute Path
+company_code,company_code
+company_name,company_name
+contact_uid,contact_uid
+location_uid,location_uid
+address_uid,address_uid
+user_uid,user_uid
+first_name,first_name
+middle_name,middle_name
+last_name,last_name
+gender,gender
+date_of_birth,date_of_birth
+door_no,door_no
+address_line_1,address_line_1
+address_line_2,address_line_2
+land_mark,land_mark
+state,state
+country,country
+zipcode,zipcode
+location_type,location_type
+lat,lat
+long,long
+land_line_no,land_line_no
+mobile_no,mobile_no
+email,email

@@ -1,0 +1,3 @@
+TestCase_Id,section_code,status
+TC_001,Section{{XS}},TRUE
+TC_002,,FALSE

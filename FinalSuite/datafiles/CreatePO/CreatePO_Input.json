@@ -1,0 +1,23 @@
+{
+  "po_description": "string",
+  "master_po_type": "string",
+  "systematic_po": true,
+  "moDetails": [
+    {
+      "destination": "string",
+      "vpo": "string",
+      "packing_method": "string",
+      "z_code": "string",
+      "z_feature_desc": "string",
+      "mo_number": "string",
+      "style": "string",
+      "color": "string",
+      "size": "string",
+      "schedule": "string",
+      "mo_status": "string",
+      "mo_quantity": 0,
+      "operation_sequence": "string",
+      "order_quantity": 0
+    }
+  ]
+}

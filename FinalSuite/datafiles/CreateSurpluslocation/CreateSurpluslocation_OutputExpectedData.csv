@@ -1,0 +1,5 @@
+TestCase_Id,isActive,status,errorInfo,code
+TC_001,TRUE,TRUE,Success,
+TC_002,,,Surplus Location Code already exist.,
+TC_003,,,,500
+TC_004,,,,500

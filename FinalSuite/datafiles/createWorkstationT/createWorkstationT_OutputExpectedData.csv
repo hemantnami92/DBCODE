@@ -1,0 +1,4 @@
+TestCase_Id,workstation_type_code,errInfo
+Tc_002,PLANNING{{XS}},
+Tc_001,,The department type doesnt exist
+Tc_003,PLANNING1{{XS}},

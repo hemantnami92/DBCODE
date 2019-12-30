@@ -1,0 +1,12 @@
+{
+  "status": true,
+  "errorInfo": "Fabric Category Updated Sucessfully",
+  "data": {
+    "surplus_location_category_code": "manikanta",
+    "surplus_location_category_description": "stringii",
+    "isActive": true,
+    "created_date": "2019-07-18",
+    "deactivated_date": null,
+    "surplus_location_category_id": "e50c795f-0def-43e9-89de-b42189caccd1"
+  }
+}

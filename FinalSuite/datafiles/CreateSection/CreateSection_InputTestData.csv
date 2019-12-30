@@ -1,0 +1,4 @@
+TestCase_Id,section_code,section_name,departmentCode,date_of_birth
+TC_001,Section{{XS}},Section11{{XS}},DEP{{XS}},8/8/1995
+TC_002,123,string,123,8/8/1995
+TC_003,Section4{{XS}},Section001,DEP{{XS}},8/8/1995

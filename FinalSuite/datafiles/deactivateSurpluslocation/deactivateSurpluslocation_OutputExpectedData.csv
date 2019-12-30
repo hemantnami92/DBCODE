@@ -1,0 +1,3 @@
+TestCase_Id,status,errorInfo
+TC_001,,successfully deactivated.
+TC_002,,surplusLocation not found.

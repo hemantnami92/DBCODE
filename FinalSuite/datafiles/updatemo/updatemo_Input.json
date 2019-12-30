@@ -1,0 +1,74 @@
+{
+
+    "mo_number": "mo3",
+    "vpo": "vpo12.0",
+    "customer_order_no": "co1",
+    "customer_order_line_no": "co u 2",
+    "packing_method": "pk2",
+    "destination": "us",
+    "cpo": "cpo 1",
+    "schedule": "schedule1",
+    "mo_status": "open",
+    "max_operations": "5",
+    "max_status_operated": "2",
+    "buyer_desc": "buyer1",
+    "plant_code": "plant 1",
+    "business_area_code": "code 1",
+    "mo_quantity": "20",
+    "planned_delivery_date": "2019-02-15",
+    "requested_planned_delivery_date": "2019-02-15",
+    "planned_cut_date": "2019-02-15",
+    "end_date": "2019-02-15",
+    "transaction_id": "mo32323",
+    "po_number": "",
+    "isActive": true,
+    "deactivated_date": null,
+    "handled_po": false,
+    "omsProductsInfos": {
+      "product_sku": "sku 1",
+      "product_name": "fabric 1",
+      "product_desc": "dummy fabric",
+      "color_name": "color 1",
+      "color_desc": "color 1",
+      "size_name": "S",
+      "zfeature_name": "z1",
+      "zfeature_desc": "z2",
+      "style": "style 1",
+      "customer_style_no": "c style",
+      "size_desc": null
+    },
+    "omsMoItemss": [
+      {
+        "material_item_code": "code 1",
+        "material_sequence": "seq ",
+        "consumption": "10.0000",
+        "operation_code": "15",
+        "uom": "mts",
+        "wastage_perc": "2.00"
+      }
+    ],
+    "omsItemInfos": [
+      {
+        "item_desc": "item1",
+        "color_code": "col 1",
+        "size_code": "small",
+        "z_code": "z1",
+        "color_desc": "color 1 ",
+        "size_desc": "string",
+        "z_feature_desc": "z1",
+        "material_mo_unique_ref_id": "mo1-item1",
+        "material_item_code": "code 1"
+      }
+    ],
+    "omsMoOperationss": [
+      {
+        "op_mo_unique_ref_id": "mo1-15",
+        "operation_code": "15",
+        "operation_type": "cutting",
+        "smv": "10",
+        "workstation_id": "work station 1",
+        "operation_desc": null,
+        "main_operation_code": "20"
+      }
+    ]
+  }

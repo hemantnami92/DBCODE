@@ -1,0 +1,5 @@
+TestCase_Id,status
+TC_001,TRUE
+TC_002,TRUE
+TC_003,FALSE
+TC_004,FALSE

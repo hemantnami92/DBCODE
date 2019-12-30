@@ -1,0 +1,4 @@
+TestCase_Id,reason_code,status,errInfo
+Tc_001,Rea{{XS}},TRUE,
+Tc_002,,FALSE,Error while creating Reason
+Tc_003,,FALSE,Error while creating Reason

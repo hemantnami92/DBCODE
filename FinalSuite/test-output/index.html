@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Gateway\AppData\Local\Temp\testng-eclipse-641035918\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 10 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstation(TC_003, {&quot;workstation_code&quot;:&quot;WOKSTATIONRKS427&quot;,&quot;section_code&quot;:&quot;Section427&quot;,&quot;activated_date&quot;:&quot;string&quot;...)">createWorkstation(TC_003, {"workstation_code":"WOKSTATIONRKS427","section_code":"Section427","activated_date":"string"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstation(TC_001, {&quot;workstation_code&quot;:&quot;&quot;,&quot;section_code&quot;:&quot;Section427&quot;,&quot;activated_date&quot;:&quot;string&quot;,&quot;workstation_id...)">createWorkstation(TC_001, {"workstation_code":"","section_code":"Section427","activated_date":"string","workstation_id...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstation(TC_002, {&quot;workstation_code&quot;:&quot;WOKSTATIONRKS427&quot;,&quot;section_code&quot;:&quot;&quot;,&quot;activated_date&quot;:&quot;string&quot;,&quot;workstat...)">createWorkstation(TC_002, {"workstation_code":"WOKSTATIONRKS427","section_code":"","activated_date":"string","workstat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstationT(Tc_001, {&quot;workstation_type_description&quot;:&quot;Testing1&quot;,&quot;department_type&quot;:&quot;abc1&quot;,&quot;workstation_type_code&quot;:...)">createWorkstationT(Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="getWorkstationByWorkstaioncode(TC_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;workstation_id&quot;:&quot;983dc0e1-12d...)">getWorkstationByWorkstaioncode(TC_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"983dc0e1-12d...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_004, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">updateWorkstation(TC_004, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_007, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">updateWorkstation(TC_007, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_009, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec16&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-...)">updateWorkstation(TC_009, {"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_003, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">updateWorkstation(TC_003, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_001, {&quot;workstation_code&quot;:2,&quot;section_code&quot;:&quot;P12345&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;dbc66a82...)">updateWorkstation(TC_001, {"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstationT(Tc_003, {&quot;workstation_type_description&quot;:&quot;Testing&quot;,&quot;department_type&quot;:&quot;sewing&quot;,&quot;workstation_type_code&quot;...)">createWorkstationT(Tc_003, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWorkstationT(Tc_002, {&quot;workstation_type_description&quot;:&quot;Testing&quot;,&quot;department_type&quot;:&quot;sewing&quot;,&quot;workstation_type_code&quot;...)">createWorkstationT(Tc_002, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWtom(Tc_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;10&quot;,&quot;15&quot;]},...)">createWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10","15"]},...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="createWtom(Tc_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;10&quot;]}, {sta...)">createWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10"]}, {sta...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="deacWtom(Tc_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;string&quot;]}, ...)">deacWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="deacWtom(Tc_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;string&quot;]}, ...)">deacWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="getWorkstationByWorkstaioncode(TC_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0c9...)">getWorkstationByWorkstaioncode(TC_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"f884a94f-0c9...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_005, {&quot;workstation_code&quot;:26,&quot;section_code&quot;:&quot;&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;dbc66a82-5361...)">updateWorkstation(TC_005, {"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_008, {&quot;workstation_code&quot;:67,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-...)">updateWorkstation(TC_008, {"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_006, {&quot;workstation_code&quot;:26,&quot;section_code&quot;:&quot;P12345&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;&quot;,&quot;isAc...)">updateWorkstation(TC_006, {"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isAc...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstation(TC_002, {&quot;workstation_code&quot;:5,&quot;section_code&quot;:&quot;sec01&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;203c8164-...)">updateWorkstation(TC_002, {"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstationT(Tc_001, {&quot;workstation_type_description&quot;:&quot;Testing2&quot;,&quot;department_type&quot;:&quot;abc&quot;,&quot;workstation_type_code&quot;:&quot;...)">updateWorkstationT(Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.schemaxtech.testAutomationFrameworkTest.WorkstationT" hash-for-method="updateWorkstationT(Tc_002, {&quot;workstation_type_description&quot;:&quot;Testing3&quot;,&quot;department_type&quot;:&quot;planning&quot;,&quot;workstation_type_co...)">updateWorkstationT(Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_co...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.schemaxtech.testAutomationFrameworkTest.WorkstationT</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstation(TC_003, {&quot;workstation_code&quot;:&quot;WOKSTATIONRKS427&quot;,&quot;section_code&quot;:&quot;Section427&quot;,&quot;activated_date&quot;:&quot;string&quot;...)">
+                  </a> <!-- createWorkstation(TC_003, {"workstation_code":"WOKSTATIONRKS427","section_code":"Section427","activated_date":"string"...) -->
+                  <span class="method-name">createWorkstation</span>
+                  <span class="parameters">(TC_003, {"workstation_code":"WOKSTATIONRKS427","section_code":"Section427","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}, {status=true}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstation(TC_001, {&quot;workstation_code&quot;:&quot;&quot;,&quot;section_code&quot;:&quot;Section427&quot;,&quot;activated_date&quot;:&quot;string&quot;,&quot;workstation_id...)">
+                  </a> <!-- createWorkstation(TC_001, {"workstation_code":"","section_code":"Section427","activated_date":"string","workstation_id...) -->
+                  <span class="method-name">createWorkstation</span>
+                  <span class="parameters">(TC_001, {"workstation_code":"","section_code":"Section427","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstation(TC_002, {&quot;workstation_code&quot;:&quot;WOKSTATIONRKS427&quot;,&quot;section_code&quot;:&quot;&quot;,&quot;activated_date&quot;:&quot;string&quot;,&quot;workstat...)">
+                  </a> <!-- createWorkstation(TC_002, {"workstation_code":"WOKSTATIONRKS427","section_code":"","activated_date":"string","workstat...) -->
+                  <span class="method-name">createWorkstation</span>
+                  <span class="parameters">(TC_002, {"workstation_code":"WOKSTATIONRKS427","section_code":"","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstationT(Tc_001, {&quot;workstation_type_description&quot;:&quot;Testing1&quot;,&quot;department_type&quot;:&quot;abc1&quot;,&quot;workstation_type_code&quot;:...)">
+                  </a> <!-- createWorkstationT(Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":...) -->
+                  <span class="method-name">createWorkstationT</span>
+                  <span class="parameters">(Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":"planning427"}, {errInfo=The department type doesnt exist, workstation_type_code=}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:566)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWorkstationByWorkstaioncode(TC_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;workstation_id&quot;:&quot;983dc0e1-12d...)">
+                  </a> <!-- getWorkstationByWorkstaioncode(TC_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"983dc0e1-12d...) -->
+                  <span class="method-name">getWorkstationByWorkstaioncode</span>
+                  <span class="parameters">(TC_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"983dc0e1-12d4-456e-a8ac-7e0125fd7966"}, {status=true}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.getWorkstationByWorkstaioncode(WorkstationT.java:146)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_004, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">
+                  </a> <!-- updateWorkstation(TC_004, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_004, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_007, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">
+                  </a> <!-- updateWorkstation(TC_007, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_007, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"bc06c472-e364-4852-89dd","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_009, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec16&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-...)">
+                  </a> <!-- updateWorkstation(TC_009, {"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_009, {"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_003, {&quot;workstation_code&quot;:6,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0...)">
+                  </a> <!-- updateWorkstation(TC_003, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_003, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_001, {&quot;workstation_code&quot;:2,&quot;section_code&quot;:&quot;P12345&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;dbc66a82...)">
+                  </a> <!-- updateWorkstation(TC_001, {"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_001, {"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3900000","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=true}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Verification of &apos;status&apos; with value &apos;true&apos; in response json failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.schemaxtech.testAutomationFrameworkTest.WorkstationT</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstationT(Tc_003, {&quot;workstation_type_description&quot;:&quot;Testing&quot;,&quot;department_type&quot;:&quot;sewing&quot;,&quot;workstation_type_code&quot;...)">
+                  </a> <!-- createWorkstationT(Tc_003, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...) -->
+                  <span class="method-name">createWorkstationT</span>
+                  <span class="parameters">(Tc_003, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code":"planning1427"}, {errInfo=, workstation_type_code=PLANNING1427}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWorkstationT(Tc_002, {&quot;workstation_type_description&quot;:&quot;Testing&quot;,&quot;department_type&quot;:&quot;sewing&quot;,&quot;workstation_type_code&quot;...)">
+                  </a> <!-- createWorkstationT(Tc_002, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...) -->
+                  <span class="method-name">createWorkstationT</span>
+                  <span class="parameters">(Tc_002, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code":"planning427"}, {errInfo=, workstation_type_code=PLANNING427}, {workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWtom(Tc_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;10&quot;,&quot;15&quot;]},...)">
+                  </a> <!-- createWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10","15"]},...) -->
+                  <span class="method-name">createWtom</span>
+                  <span class="parameters">(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10","15"]}, {status=false}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createWtom(Tc_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;10&quot;]}, {sta...)">
+                  </a> <!-- createWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10"]}, {sta...) -->
+                  <span class="method-name">createWtom</span>
+                  <span class="parameters">(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10"]}, {status=false}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deacWtom(Tc_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;string&quot;]}, ...)">
+                  </a> <!-- deacWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...) -->
+                  <span class="method-name">deacWtom</span>
+                  <span class="parameters">(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, {status=false}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deacWtom(Tc_001, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;operation_code&quot;:[&quot;string&quot;]}, ...)">
+                  </a> <!-- deacWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...) -->
+                  <span class="method-name">deacWtom</span>
+                  <span class="parameters">(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, {status=false}, {errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWorkstationByWorkstaioncode(TC_002, {&quot;workstation_type_id&quot;:&quot;9b09b6af-3646-4819-926e-e8a11c7a45fe&quot;,&quot;workstation_id&quot;:&quot;f884a94f-0c9...)">
+                  </a> <!-- getWorkstationByWorkstaioncode(TC_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"f884a94f-0c9...) -->
+                  <span class="method-name">getWorkstationByWorkstaioncode</span>
+                  <span class="parameters">(TC_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80ac"}, {status=false}, {workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_005, {&quot;workstation_code&quot;:26,&quot;section_code&quot;:&quot;&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;dbc66a82-5361...)">
+                  </a> <!-- updateWorkstation(TC_005, {"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_005, {"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_008, {&quot;workstation_code&quot;:67,&quot;section_code&quot;:&quot;sec1&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;f884a94f-...)">
+                  </a> <!-- updateWorkstation(TC_008, {"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_008, {"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_006, {&quot;workstation_code&quot;:26,&quot;section_code&quot;:&quot;P12345&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;&quot;,&quot;isAc...)">
+                  </a> <!-- updateWorkstation(TC_006, {"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isAc...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_006, {"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isActive":"","workstation_description":"cutting6445try3876","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstation(TC_002, {&quot;workstation_code&quot;:5,&quot;section_code&quot;:&quot;sec01&quot;,&quot;activated_date&quot;:&quot;&quot;,&quot;workstation_id&quot;:&quot;203c8164-...)">
+                  </a> <!-- updateWorkstation(TC_002, {"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-...) -->
+                  <span class="method-name">updateWorkstation</span>
+                  <span class="parameters">(TC_002, {"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-4795-414e-a1be-0d937cb16dbb","isActive":"","workstation_description":"string","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}, {workstation_id=, workstation_type_id=, status=false}, {workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstationT(Tc_001, {&quot;workstation_type_description&quot;:&quot;Testing2&quot;,&quot;department_type&quot;:&quot;abc&quot;,&quot;workstation_type_code&quot;:&quot;...)">
+                  </a> <!-- updateWorkstationT(Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"...) -->
+                  <span class="method-name">updateWorkstationT</span>
+                  <span class="parameters">(Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"planning147"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateWorkstationT(Tc_002, {&quot;workstation_type_description&quot;:&quot;Testing3&quot;,&quot;department_type&quot;:&quot;planning&quot;,&quot;workstation_type_co...)">
+                  </a> <!-- updateWorkstationT(Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_co...) -->
+                  <span class="method-name">updateWorkstationT</span>
+                  <span class="parameters">(Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_code":"planning001"}, {errInfo=The workstation type doesnt exist, workstation_type_code=, status=}, {workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Gateway\AppData\Local\Temp\testng-eclipse-641035918\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.schemaxtech.testAutomationFrameworkTest.WorkstationT&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createWorkstationT')
+data.setCell(0, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(0, 3, 2649);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createWorkstationT')
+data.setCell(1, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(1, 3, 177);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'updateWorkstation')
+data.setCell(2, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(2, 3, 102);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createWorkstation')
+data.setCell(3, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(3, 3, 90);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createWorkstation')
+data.setCell(4, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(4, 3, 87);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createWtom')
+data.setCell(5, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(5, 3, 79);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updateWorkstation')
+data.setCell(6, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(6, 3, 75);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getWorkstationByWorkstaioncode')
+data.setCell(7, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(7, 3, 68);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateWorkstation')
+data.setCell(8, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(8, 3, 68);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateWorkstation')
+data.setCell(9, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(9, 3, 67);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'updateWorkstation')
+data.setCell(10, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(10, 3, 66);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateWorkstationT')
+data.setCell(11, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(11, 3, 66);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getWorkstationByWorkstaioncode')
+data.setCell(12, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(12, 3, 64);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createWorkstation')
+data.setCell(13, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(13, 3, 63);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createWorkstationT')
+data.setCell(14, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(14, 3, 59);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'updateWorkstation')
+data.setCell(15, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(15, 3, 58);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'updateWorkstation')
+data.setCell(16, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(16, 3, 55);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'updateWorkstation')
+data.setCell(17, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(17, 3, 54);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'updateWorkstation')
+data.setCell(18, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(18, 3, 53);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'createWtom')
+data.setCell(19, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(19, 3, 52);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'deacWtom')
+data.setCell(20, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(20, 3, 50);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'updateWorkstationT')
+data.setCell(21, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(21, 3, 47);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'deacWtom')
+data.setCell(22, 2, 'com.schemaxtech.testAutomationFrameworkTest.WorkstationT')
+data.setCell(22, 3, 39);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.schemaxtech.testAutomationFrameworkTest.WorkstationT</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createWorkstationT(Tc_002, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createWorkstationT(Tc_001, {"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":...)</span>
+                <span class="method-start">2652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createWorkstationT(Tc_003, {"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code"...)</span>
+                <span class="method-start">2715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateWorkstation(TC_001, {"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82...)</span>
+                <span class="method-start">2918 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstation(TC_002, {"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-...)</span>
+                <span class="method-start">2990 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateWorkstation(TC_003, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</span>
+                <span class="method-start">3070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateWorkstation(TC_004, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</span>
+                <span class="method-start">3139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstation(TC_005, {"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361...)</span>
+                <span class="method-start">3199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstation(TC_006, {"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isAc...)</span>
+                <span class="method-start">3254 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateWorkstation(TC_007, {"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0...)</span>
+                <span class="method-start">3311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstation(TC_008, {"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-...)</span>
+                <span class="method-start">3418 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateWorkstation(TC_009, {"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-...)</span>
+                <span class="method-start">3486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstationT(Tc_001, {"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"...)</span>
+                <span class="method-start">3548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateWorkstationT(Tc_002, {"workstation_type_description":"Testing3","department_type":"planning","workstation_type_co...)</span>
+                <span class="method-start">3615 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10","15"]},...)</span>
+                <span class="method-start">3672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10"]}, {sta...)</span>
+                <span class="method-start">3725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getWorkstationByWorkstaioncode(TC_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"983dc0e1-12d...)</span>
+                <span class="method-start">3809 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getWorkstationByWorkstaioncode(TC_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"f884a94f-0c9...)</span>
+                <span class="method-start">3875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deacWtom(Tc_001, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...)</span>
+                <span class="method-start">3951 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deacWtom(Tc_002, {"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}, ...)</span>
+                <span class="method-start">4002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createWorkstation(TC_001, {"workstation_code":"","section_code":"Section427","activated_date":"string","workstation_id...)</span>
+                <span class="method-start">4048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createWorkstation(TC_002, {"workstation_code":"WOKSTATIONRKS427","section_code":"","activated_date":"string","workstat...)</span>
+                <span class="method-start">4113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createWorkstation(TC_003, {"workstation_code":"WOKSTATIONRKS427","section_code":"Section427","activated_date":"string"...)</span>
+                <span class="method-start">4202 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

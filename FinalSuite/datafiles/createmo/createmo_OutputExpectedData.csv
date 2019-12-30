@@ -1,0 +1,13 @@
+TestCase_Id,mo_number,status
+Tc_001,P1_M1_nkm{{XS}},TRUE
+Tc_002,P1_M2_nkm{{XS}},TRUE
+Tc_003,P1_M3_nkm{{XS}},TRUE
+Tc_004,P1_M4_nkm{{XS}},TRUE
+Tc_005,P1_M5_nkm{{XS}},TRUE
+Tc_006,P1_M6_nkm{{XS}},TRUE
+Tc_007,P1_M7_nkm{{XS}},TRUE
+Tc_008,P1_M8_nkm{{XS}},TRUE
+Tc_009,P1_M9_nkm{{XS}},TRUE
+Tc_010,P1_M10_nkm{{XS}},TRUE
+Tc_011,P1_M11_nkm{{XS}},TRUE
+Tc_012,P1_M12_nkm{{XS}}{{XS}},TRUE

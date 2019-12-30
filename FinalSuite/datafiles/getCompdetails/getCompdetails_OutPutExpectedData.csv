@@ -1,0 +1,2 @@
+TestCase_Id,company_code,status,errorInfo
+Tc_001,comp{{XS}},TRUE,

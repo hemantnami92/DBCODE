@@ -1,0 +1,10 @@
+TestCase_Id,status,workstation_id,workstation_type_id
+TC_001,TRUE,,
+TC_002,FALSE,,
+TC_003,TRUE,,
+TC_004,TRUE,,
+TC_005,FALSE,,
+TC_006,FALSE,,
+TC_007,TRUE,,
+TC_008,FALSE,,
+TC_009,TRUE,,

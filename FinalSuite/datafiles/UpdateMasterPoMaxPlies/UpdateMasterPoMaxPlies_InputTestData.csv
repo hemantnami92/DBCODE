@@ -1,0 +1,2 @@
+TestCase_Id,material_item_code1,max_plies1,cut_ref1,rm_description1,color1
+Tc_001,"{0=10 P1_M1_nkm{{XS}}, 1=15 P1_M1_nkm{{XS}}, 2=60 P1_M1_nkm{{XS}}, 3=70 P1_M1_nkm{{XS}}}","{0=10 P1_M1_nkm{{XS}}, 1=15 P1_M1_nkm{{XS}}, 2=60 P1_M1_nkm{{XS}}, 3=70 P1_M1_nkm{{XS}}}","{0=10 P1_M1_nkm{{XS}}, 1=15 P1_M1_nkm{{XS}}, 2=60 P1_M1_nkm{{XS}}, 3=70 P1_M1_nkm{{XS}}}","{0=10 P1_M1_nkm{{XS}}, 1=15 P1_M1_nkm{{XS}}, 2=60 P1_M1_nkm{{XS}}, 3=70 P1_M1_nkm{{XS}}}","{0=10 P1_M1_nkm{{XS}}, 1=15 P1_M1_nkm{{XS}}, 2=60 P1_M1_nkm{{XS}}, 3=70 P1_M1_nkm{{XS}}}"

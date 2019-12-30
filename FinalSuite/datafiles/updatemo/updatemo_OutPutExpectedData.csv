@@ -1,0 +1,4 @@
+TestCase_Id,mo_number,style,schedule,color_name,size_name,mo_quantity
+Tc_001,1963947{{XS}},Ravi1,494668,BLACDILIN4,L,888
+Tc_002,mo1{{XS}},Ravi2,494669,BLACDILIN4,L,889
+Tc_003,mo2{{XS}},Ravi3,494670,BLACDILIN4,L,890

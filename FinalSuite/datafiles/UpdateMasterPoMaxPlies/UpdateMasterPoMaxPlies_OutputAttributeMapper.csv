@@ -1,0 +1,6 @@
+Attribute,Attribute Path
+material_item_code,data/max_plies_details/material_item_code
+max_plies,data/max_plies_details/max_plies
+cut_ref,data/max_plies_details/cut_ref
+rm_description,data/max_plies_details/rm_description
+color,data/max_plies_details/color

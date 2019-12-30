@@ -1,0 +1,33 @@
+{
+  "status": true,
+  "data": {
+    "company_code": "007",
+    "company_name": "demo",
+    "activated_date": null,
+    "deactivated_date": null,
+    "isActive": true,
+    "location_uid": "3ab05601-6b36-4887-baff-5323703dd204",
+    "location_type": "ind",
+    "lat": "60",
+    "long": "50",
+    "address_uid": "04d79926-ddfd-4009-b018-c633ac6dd3fd",
+    "address_line_1": "demo",
+    "address_line_2": "sample",
+    "door_no": "1-2",
+    "land_mark": "ap",
+    "country": "ind",
+    "state": "ap",
+    "zipcode": "123654789",
+    "user_uid": "56a27e32-8d40-4818-b53b-4d9a48f45e97",
+    "first_name": "first",
+    "middle_name": "name",
+    "last_name": "name1",
+    "gender": "male",
+    "date_of_birth": "2016-05-08",
+    "uid_country": "789",
+    "contact_uid": "844df5c9-a12e-4450-9d11-dd4b551287c9",
+    "land_line_no": "1236547",
+    "mobile_no": "1236579",
+    "email": "@gmail.com"
+  }
+}

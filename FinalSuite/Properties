@@ -1,0 +1,6 @@
+PMS=http://192.168.0.155:2000
+PPS=http://192.168.0.155:2005
+PTS=
+SMS=
+baseFolder=/datafiles
+suffix=427

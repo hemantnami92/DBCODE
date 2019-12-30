@@ -1,0 +1,33 @@
+{
+  "data": {
+    "cluster_code": "string",
+    "cluster_name": "string",
+    "activated_date": "1992-05-01",
+    "isActive": true,
+    "location_type": "string",
+    "lat": "string",
+    "long": "string",
+    "door_no": "string",
+    "address_line_1": "string",
+    "address_line_2": "string",
+    "land_mark": "string",
+    "state": "string",
+    "country": "string",
+    "zipcode": "string",
+    "first_name": "string",
+    "middle_name": "string",
+    "last_name": "string",
+    "gender": "string",
+    "ref_uid": null,
+    "uid_country": "string",
+    "date_of_birth": "1992-08-05",
+    "land_line_no": "string",
+    "mobile_no": "string",
+    "email": "string",
+    "user_uid": "4661697b-383b-48db-a616-041dfd216be3",
+    "location_uid": "b084b758-36b7-4888-89ed-ac664cd724c7",
+    "contact_uid": "42c11cdf-d9bb-45c9-aed9-55f1a5f350ba",
+    "address_uid": "451cbd12-b4f7-4d4f-87f0-f4287e4e6913"
+  },
+  "status": true
+}

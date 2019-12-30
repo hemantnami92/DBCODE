@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test verbose="0" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Company">
+        <methods>
+          <include name="postSampleTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Company -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Workstation">
+        <methods>
+          <include name="getWorkstationByWorkstaioncode" invocation-numbers="0"/>
+          <include name="updateWorkstation" invocation-numbers="0 2 3 6 8"/>
+          <include name="createWorkstationT" invocation-numbers="0 1 2"/>
+          <include name="deActivateWorkstation" invocation-numbers="0 1"/>
+          <include name="createWtom" invocation-numbers="0 1"/>
+          <include name="createWorkstation" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Workstation -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Department">
+        <methods>
+          <include name="GetDepartment" invocation-numbers="0"/>
+          <include name="CreateDepartment" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Department -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.WorkstationT">
+        <methods>
+          <include name="updateWorkstation"/>
+          <include name="createWorkstationT" invocation-numbers="0 1 2"/>
+          <include name="getWorkstationByWorkstaioncode"/>
+          <include name="deActivateWorkstation"/>
+          <include name="createWtom" invocation-numbers="0 1"/>
+          <include name="createWorkstation" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.WorkstationT -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Sample">
+        <methods>
+          <include name="updateCompany"/>
+          <include name="getCompany" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Sample -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Section">
+        <methods>
+          <include name="UpdateSection" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Section -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Surplus">
+        <methods>
+          <include name="CreateSurpluslocation" invocation-numbers="0 1"/>
+          <include name="UpdateSurpluslocation" invocation-numbers="0 1"/>
+          <include name="getSurpluslocation" invocation-numbers="0 2"/>
+          <include name="deactivateSurpluslocation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Surplus -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Reasons">
+        <methods>
+          <include name="getRe" invocation-numbers="0"/>
+          <include name="createRe" invocation-numbers="0"/>
+          <include name="deactRe" invocation-numbers="0"/>
+          <include name="updateRe" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Reasons -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.DepartmentType">
+        <methods>
+          <include name="createdepartmenttype" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.DepartmentType -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.PPS">
+        <methods>
+          <include name="createSubProductionOrder" invocation-numbers="0"/>
+          <include name="productionOrderCreation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.PPS -->
+      <class name="com.schemaxtech.testAutomationFrameworkTest.Plant">
+        <methods>
+          <include name="updatePlant" invocation-numbers="0"/>
+          <include name="createPlant" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.Plant -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,9 @@
+Attribute,AttributePath
+reason_id,data/reason_id
+reason_code,data/reason_code
+reason_description,data/reason_description
+reason_group,data/reason_group
+department_type,data/departmentType/department_type
+status,status
+is_external,data/is_external
+isActive,data/isActive

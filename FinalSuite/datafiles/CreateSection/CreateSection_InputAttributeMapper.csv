@@ -1,0 +1,12 @@
+Attribute,Attribute_Path
+section_code,section_code
+section_name,section_name
+departmentCode,departmentCode
+first_name,first_name
+middle_name,middle_name
+last_name,last_name
+gender,gender
+date_of_birth,date_of_birth
+land_line_no,land_line_no
+mobile_no,mobile_no
+email,email

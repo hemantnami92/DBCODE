@@ -1,0 +1,15 @@
+Attribute,Attribute_Path
+department_code,department_code
+department_name,department_name
+department_type,department_type
+sla,sla
+is_active,is_active
+plant_code,plant_code
+first_name,first_name
+middle_name,middle_name
+last_name,last_name
+gender,gender
+date_of_birth,date_of_birth
+land_line_no,land_line_no
+mobile_no,mobile_no
+email,email

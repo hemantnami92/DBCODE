@@ -1,0 +1,4 @@
+TestCase_Id,workstation_type_code,workstation_type_description,department_type
+Tc_002,planning{{XS}},Testing,sewing
+Tc_001,planning{{XS}},Testing1,abc1
+Tc_003,planning1{{XS}},Testing,sewing

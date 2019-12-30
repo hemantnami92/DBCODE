@@ -1,0 +1,4 @@
+TestCase_Id,reason_code,reason_description,is_external,isActive,department_type,reason_group
+Tc_001,Rea{{XS}},sample,TRUE,TRUE,planning,Rejection
+Tc_002,Test001{{XS}},sample,TRUE,TRUE,,Rejection
+Tc_003,Test001{{XS}},sample,TRUE,TRUE,Planning,

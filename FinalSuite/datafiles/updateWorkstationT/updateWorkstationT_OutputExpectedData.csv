@@ -1,0 +1,3 @@
+TestCase_Id,workstation_type_code,errInfo,status
+Tc_001,,The workstation type doesnt exist,
+Tc_002,,The workstation type doesnt exist,

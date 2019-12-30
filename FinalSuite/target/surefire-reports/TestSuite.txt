@@ -1,0 +1,195 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 102, Failures: 49, Errors: 0, Skipped: 4, Time elapsed: 8.518 s <<< FAILURE! - in TestSuite
+createdepartmenttype(com.schemaxtech.testAutomationFrameworkTest.DepartmentType)  Time elapsed: 2.796 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+
+CreateSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 2.807 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'errorInfo' with value 'Success' in response json failed expected [Success] but found [Surplus Location Category Doesnot exist.]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+
+CreateSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0.055 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'errorInfo' with value 'Surplus Location Code already exist.' in response json failed expected [Surplus Location Code already exist.] but found [Surplus Location Category Doesnot exist.]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.CreateSurpluslocation(Surplus.java:66)
+
+createdepartmenttype(com.schemaxtech.testAutomationFrameworkTest.DepartmentType)  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.DepartmentType.createdepartmenttype(DepartmentType.java:91)
+
+UpdateSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'errorInfo' with value 'Surplus Location Updated Sucessfully' in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.071 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.047 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+
+createPlant(com.schemaxtech.testAutomationFrameworkTest.Plant)  Time elapsed: 0.024 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.createPlant(Plant.java:89)
+
+UpdateSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'errorInfo' with value 'Surplus Location Updated Sucessfully' in response json failed expected [Surplus Location Updated Sucessfully] but found [Surplus Location Code already exist.]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.UpdateSurpluslocation(Surplus.java:76)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.067 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0 s  <<< FAILURE!
+org.json.JSONException: JSONObject["data"] not found.
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:89)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.createWorkstation(Workstation.java:69)
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.011 s  <<< FAILURE!
+org.json.JSONException: JSONObject["data"] not found.
+
+createWorkstationT(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.NullPointerException
+
+CreateDepartment(com.schemaxtech.testAutomationFrameworkTest.Department)  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+
+createRe(com.schemaxtech.testAutomationFrameworkTest.Reasons)  Time elapsed: 0.006 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.createRe(Reasons.java:91)
+
+CreateDepartment(com.schemaxtech.testAutomationFrameworkTest.Department)  Time elapsed: 0.05 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Department.CreateDepartment(Department.java:89)
+
+postSampleTest(com.schemaxtech.testAutomationFrameworkTest.Company)  Time elapsed: 0.156 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'false' in response json failed expected [false] but found [true]
+	at com.schemaxtech.testAutomationFrameworkTest.Company.postSampleTest(Company.java:100)
+
+updateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+
+updatePlant(com.schemaxtech.testAutomationFrameworkTest.Plant)  Time elapsed: 0.156 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Plant.updatePlant(Plant.java:116)
+
+getSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+
+updateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+
+getCompany(com.schemaxtech.testAutomationFrameworkTest.Sample)  Time elapsed: 0.075 s  <<< FAILURE!
+org.json.JSONException: JSONObject["data"] not found.
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+
+getSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.getSurpluslocation(Surplus.java:86)
+
+getCompany(com.schemaxtech.testAutomationFrameworkTest.Sample)  Time elapsed: 0.033 s  <<< FAILURE!
+org.json.JSONException: JSONObject["data"] not found.
+	at com.schemaxtech.testAutomationFrameworkTest.Sample.getCompany(Sample.java:136)
+
+updateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.022 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+
+updateRe(com.schemaxtech.testAutomationFrameworkTest.Reasons)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.updateRe(Reasons.java:101)
+
+GetDepartment(com.schemaxtech.testAutomationFrameworkTest.Department)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Department.GetDepartment(Department.java:100)
+
+updateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.056 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+
+updateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.181 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.updateWorkstation(Workstation.java:89)
+
+getWorkstationByWorkstaioncode(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.025 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.getWorkstationByWorkstaioncode(Workstation.java:79)
+
+createWtom(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+
+createWtom(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+
+deactivateSurpluslocation(com.schemaxtech.testAutomationFrameworkTest.Surplus)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'errorInfo' with value 'successfully deactivated.' in response json failed expected [successfully deactivated.] but found [surplusLocation not found.]
+	at com.schemaxtech.testAutomationFrameworkTest.Surplus.deactivateSurpluslocation(Surplus.java:96)
+
+UpdateSection(com.schemaxtech.testAutomationFrameworkTest.Section)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+
+createWtom(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.057 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWtom(WorkstationT.java:120)
+
+createWtom(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+
+deactRe(com.schemaxtech.testAutomationFrameworkTest.Reasons)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.deactRe(Reasons.java:111)
+
+UpdateSection(com.schemaxtech.testAutomationFrameworkTest.Section)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Section.UpdateSection(Section.java:100)
+
+getRe(com.schemaxtech.testAutomationFrameworkTest.Reasons)  Time elapsed: 0.059 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Reasons.getRe(Reasons.java:121)
+
+deActivateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+
+productionOrderCreation(com.schemaxtech.testAutomationFrameworkTest.PPS)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.productionOrderCreation(PPS.java:331)
+
+deActivateWorkstation(com.schemaxtech.testAutomationFrameworkTest.Workstation)  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.Workstation.deActivateWorkstation(Workstation.java:100)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.049 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+
+createWorkstation(com.schemaxtech.testAutomationFrameworkTest.WorkstationT)  Time elapsed: 0.055 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:143)
+
+createSubProductionOrder(com.schemaxtech.testAutomationFrameworkTest.PPS)  Time elapsed: 0.046 s  <<< FAILURE!
+java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
+	at com.schemaxtech.testAutomationFrameworkTest.PPS.createSubProductionOrder(PPS.java:414)
+

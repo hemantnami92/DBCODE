@@ -1,0 +1,3 @@
+TestCase_Id,company_code,company_name,first_name,middle_name,last_name,gender,date_of_birth,door_no,address_line_1,address_line_2,land_mark,state,country,zipcode,location_type,lat,long,land_line_no,mobile_no,email
+TC_001,TestComapny14{{XS}},companyname003,,,,Priya336,2/3/2012,Priya338,Priya339,Priya340,Priya341,Priya342,Priya343,Priya344,Priya345,Priya346,Priya347,Priya348,Priya349,Priya350
+TC_002,TestComapny9{{XS}},companyname004,,,,Priya337,2/4/2012,Priya339,Priya340,Priya341,Priya342,Priya343,Priya344,Priya345,Priya346,Priya347,Priya348,Priya349,Priya350,Priya351

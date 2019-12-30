@@ -1,0 +1,10 @@
+TestCase_Id,workstation_code,workstation_description,workstation_type_id,section_code,activated_date,deactivated_date,isActive,workstation_id
+TC_001,2,cutting6445try3900000,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,P12345,,,,dbc66a82-5361-4eb4-9d98-f7c612286778
+TC_002,5,string,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,sec01,,,,203c8164-4795-414e-a1be-0d937cb16dbb
+TC_003,6,,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,sec1,,,,f884a94f-0c94-48e5-ab8c-cb80acb9d0cf
+TC_004,6,cutting6445try3,,sec1,,,,f884a94f-0c94-48e5-ab8c-cb80acb9d0cf
+TC_005,26,cutting6445try3,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,,,,,dbc66a82-5361-4eb4-9d98-f7c612286778
+TC_006,26,cutting6445try3876,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,P12345,,,,
+TC_007,6,cutting6445try3,bc06c472-e364-4852-89dd,sec1,,,,f884a94f-0c94-48e5-ab8c-cb80acb9d0cf
+TC_008,67,cutting6445try3,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,sec1,,,,f884a94f-0c94-48e5-ab8c-cb80acb9d0cf
+TC_009,6,cutting6445try3,ad336703-f3e3-4d6e-bcc4-0cd39c816de6,sec16,,,,f884a94f-0c94-48e5-ab8c-cb80acb9d0cf

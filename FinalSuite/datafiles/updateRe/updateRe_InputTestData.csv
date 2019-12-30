@@ -1,0 +1,4 @@
+TestCase_Id,reason_id,reason_code,reason_description,department_type,reason_group,isActive,is_external
+Tc_001,6c866024-b0c0-4dbc-bc69-c9b036eb8c28,test12,test12,planning,Rejection,TRUE,TRUE
+Tc_002,6c866024-b0c0-4dbc-bc69-c9b036eb8c28,test12345,demo,,Rejection,TRUE,TRUE
+Tc_003,,,,planning,,TRUE,TRUE

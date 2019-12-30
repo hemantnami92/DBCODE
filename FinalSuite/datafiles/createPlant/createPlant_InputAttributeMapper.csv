@@ -1,0 +1,25 @@
+Attribute,Attribute Path
+plant_code,plant_code
+plant_name,plant_name
+is_active,is_active
+plant_ref_code,plant_ref_code
+plant_type,plant_type
+location_type,location_type
+lat,lat
+long,long
+door_no,door_no
+address_line_1,address_line_1
+address_line_2,address_line_2
+land_mark,land_mark
+state,state
+country,country
+zipcode,zipcode
+land_line_no,land_line_no
+mobile_no,mobile_no
+email,email
+cluster_code,cluster_code
+first_name,first_name
+middle_name,middle_name
+last_name,last_name
+gender,gender
+date_of_birth,date_of_birth

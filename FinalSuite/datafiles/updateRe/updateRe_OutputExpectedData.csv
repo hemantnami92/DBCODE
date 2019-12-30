@@ -1,0 +1,4 @@
+TestCase_Id,reason_code,reason_group,status,errInfo
+Tc_001,test12,Rejection,TRUE,
+Tc_002,,,FALSE,Error while updating Reason
+Tc_003,,,FALSE,Reason Code for this department Type Already Exists!!!

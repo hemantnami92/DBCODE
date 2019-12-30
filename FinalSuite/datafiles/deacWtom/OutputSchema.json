@@ -1,0 +1,11 @@
+{
+  "status": true,
+  "data": {
+    "workstation_type_id": "4ec7c077-4d67-41a7-bb25-4fdfd328255d",
+    "workstation_type_description": "string",
+    "workstation_type_code": "planning001",
+    "department_type": "planning",
+    "is_active": true,
+    "activated_date": "2019-08-01"
+  }
+}

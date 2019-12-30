@@ -1,0 +1,3 @@
+TestCase_Id,cluster_code,cluster_name,errorInfo
+TC_001,CL{{XS}},Test1234,
+TC_002,,,Cluster  Does not Exist

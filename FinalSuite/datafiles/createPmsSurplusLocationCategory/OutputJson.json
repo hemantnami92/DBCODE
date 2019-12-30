@@ -1,0 +1,8 @@
+  {
+      "surplus_location_category_id": "7a590d49-2d3a-4a26-899b-e78e24c2cbad",
+      "surplus_location_category_code": "string",
+      "surplus_location_category_description": "string",
+      "isActive": true,
+      "created_date": "2019-07-16",
+      "deactivated_date": null
+    }
