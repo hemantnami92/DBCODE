@@ -1,39 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="10" ignored="0" total="23" passed="13">
+<testng-results skipped="1" failed="2" ignored="0" total="11" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4352" started-at="2019-12-27T12:16:53Z" finished-at="2019-12-27T12:16:58Z">
+  <suite name="Default suite" duration-ms="3408" started-at="2020-01-08T12:32:27Z" finished-at="2020-01-08T12:32:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4352" started-at="2019-12-27T12:16:53Z" finished-at="2019-12-27T12:16:58Z">
-      <class name="com.schemaxtech.testAutomationFrameworkTest.WorkstationT">
-        <test-method status="PASS" signature="createWorkstationT(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:1, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstationT" duration-ms="2649" started-at="2019-12-27T12:16:54Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code":"planning427"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{errInfo=, workstation_type_code=PLANNING427}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWorkstationT -->
-        <test-method status="FAIL" signature="createWorkstationT(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:1, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstationT" duration-ms="59" started-at="2019-12-27T12:16:56Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:56Z">
+    <test name="Default test" duration-ms="3408" started-at="2020-01-08T12:32:27Z" finished-at="2020-01-08T12:32:30Z">
+      <class name="com.schemaxtech.testAutomationFrameworkTest.SMS">
+        <test-method status="FAIL" signature="getStyleCustomerInfo(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getStyleCustomerInfo" duration-ms="2762" started-at="2020-01-08T12:32:27Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
           <params>
             <param index="0">
               <value>
@@ -42,633 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"workstation_type_description":"Testing1","department_type":"abc1","workstation_type_code":"planning427"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{errInfo=The department type doesnt exist, workstation_type_code=}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.json.JSONException">
-            <message>
-              <![CDATA[JSONObject["data"] not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.json.JSONException: JSONObject["data"] not found.
-at org.json.JSONObject.get(JSONObject.java:566)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstationT(WorkstationT.java:90)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.json.JSONException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWorkstationT -->
-        <test-method status="PASS" signature="createWorkstationT(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:1, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstationT" duration-ms="177" started-at="2019-12-27T12:16:56Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_description":"Testing","department_type":"sewing","workstation_type_code":"planning1427"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{errInfo=, workstation_type_code=PLANNING1427}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_type_description=data/workstation_type_description, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWorkstationT -->
-        <test-method status="FAIL" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="68" started-at="2019-12-27T12:16:56Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":2,"section_code":"P12345","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3900000","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=true}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verification of 'status' with value 'true' in response json failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="PASS" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="75" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":5,"section_code":"sec01","activated_date":"","workstation_id":"203c8164-4795-414e-a1be-0d937cb16dbb","isActive":"","workstation_description":"string","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="FAIL" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="67" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=true}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verification of 'status' with value 'true' in response json failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="FAIL" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="58" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_004]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=true}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verification of 'status' with value 'true' in response json failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="PASS" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="54" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_005]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":26,"section_code":"","activated_date":"","workstation_id":"dbc66a82-5361-4eb4-9d98-f7c612286778","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="PASS" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="55" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_006]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":26,"section_code":"P12345","activated_date":"","workstation_id":"","isActive":"","workstation_description":"cutting6445try3876","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="FAIL" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="102" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_007]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":6,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"bc06c472-e364-4852-89dd","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=true}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verification of 'status' with value 'true' in response json failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="PASS" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="66" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_008]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":67,"section_code":"sec1","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="FAIL" signature="updateWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstation" duration-ms="53" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_009]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":6,"section_code":"sec16","activated_date":"","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80acb9d0cf","isActive":"","workstation_description":"cutting6445try3","workstation_type_id":"ad336703-f3e3-4d6e-bcc4-0cd39c816de6","deactivated_date":""}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{workstation_id=, workstation_type_id=, status=true}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, section_code=data/section_code, workstation_id=data/workstation_id, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verification of 'status' with value 'true' in response json failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verification of 'status' with value 'true' in response json failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.updateWorkstation(WorkstationT.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstation -->
-        <test-method status="PASS" signature="updateWorkstationT(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstationT" duration-ms="66" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_description":"Testing2","department_type":"abc","workstation_type_code":"planning147"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{errInfo=The workstation type doesnt exist, workstation_type_code=, status=}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstationT -->
-        <test-method status="PASS" signature="updateWorkstationT(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="updateWorkstationT" duration-ms="47" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_description":"Testing3","department_type":"planning","workstation_type_code":"planning001"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{errInfo=The workstation type doesnt exist, workstation_type_code=, status=}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_type_description=data/workstation_type_description, is_active=data/is_active, errInfo=errInfo, department_type=data/department_type, workstation_type_code=data/workstation_type_code, activated_date=data/activated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateWorkstationT -->
-        <test-method status="PASS" signature="createWtom(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWtom" duration-ms="52" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10","15"]}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWtom -->
-        <test-method status="PASS" signature="createWtom(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWtom" duration-ms="79" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["10"]}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWtom -->
-        <test-method status="FAIL" signature="getWorkstationByWorkstaioncode(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="getWorkstationByWorkstaioncode" duration-ms="64" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"983dc0e1-12d4-456e-a8ac-7e0125fd7966"}]]>
+                <![CDATA[{"color":"red"}]]>
               </value>
             </param>
             <param index="2">
@@ -678,7 +26,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="3">
               <value>
-                <![CDATA[{workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
+                <![CDATA[{status=status}]]>
               </value>
             </param>
           </params>
@@ -693,7 +41,7 @@ at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:338)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.getWorkstationByWorkstaioncode(WorkstationT.java:146)
+at com.schemaxtech.testAutomationFrameworkTest.SMS.getStyleCustomerInfo(SMS.java:150)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -724,34 +72,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getWorkstationByWorkstaioncode -->
-        <test-method status="PASS" signature="getWorkstationByWorkstaioncode(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="getWorkstationByWorkstaioncode" duration-ms="68" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","workstation_id":"f884a94f-0c94-48e5-ab8c-cb80ac"}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, deactivated_date=data/deactivated_date, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getWorkstationByWorkstaioncode -->
-        <test-method status="PASS" signature="deacWtom(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:4, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="deacWtom" duration-ms="50" started-at="2019-12-27T12:16:57Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:58Z">
+        </test-method> <!-- getStyleCustomerInfo -->
+        <test-method status="PASS" signature="saveRmComponentsMappingForStyleColor(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:2, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="saveRmComponentsMappingForStyleColor" duration-ms="46" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
           <params>
             <param index="0">
               <value>
@@ -760,177 +82,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="1">
               <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deacWtom -->
-        <test-method status="PASS" signature="deacWtom(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:4, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="deacWtom" duration-ms="39" started-at="2019-12-27T12:16:58Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tc_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","operation_code":["string"]}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{errInfo=errInfo, workstation_type_id=data/workstation_type_id, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deacWtom -->
-        <test-method status="FAIL" signature="createWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstation" duration-ms="63" started-at="2019-12-27T12:16:58Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_001]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":"","section_code":"Section427","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWorkstation -->
-        <test-method status="FAIL" signature="createWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstation" duration-ms="87" started-at="2019-12-27T12:16:58Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_002]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":"WOKSTATIONRKS427","section_code":"","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[{status=false}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[{workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWorkstation -->
-        <test-method status="FAIL" signature="createWorkstation(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.WorkstationT@6c3708b3]" name="createWorkstation" duration-ms="90" started-at="2019-12-27T12:16:58Z" data-provider="sampleDataProviderget" finished-at="2019-12-27T12:16:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TC_003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[{"workstation_code":"WOKSTATIONRKS427","section_code":"Section427","activated_date":"string","workstation_id":"string","isActive":true,"workstation_description":"Sample427","workstation_type_id":"9b09b6af-3646-4819-926e-e8a11c7a45fe","deactivated_date":"string","capacity":0}]]>
+                <![CDATA[{"color":"red","rm_mapping":[{"rm_sku":"sam","components":["string"],"rm_seq":"samm502"}],"style":"pspk08"}]]>
               </value>
             </param>
             <param index="2">
@@ -940,7 +92,237 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="3">
               <value>
-                <![CDATA[{workstation_code=data/workstation_code, activated_date=data/activated_date, section_code=data/section_code, workstation_id=data/workstation_id, isActive=isActive, workstation_description=data/workstation_description, workstation_type_id=data/workstation_type_id, deactivated_date=data/deactivated_date, status=status}]]>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveRmComponentsMappingForStyleColor -->
+        <test-method status="PASS" signature="checkIfCompnentsMappedForStyleRmSkus(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="checkIfCompnentsMappedForStyleRmSkus" duration-ms="49" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"PSPK08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIfCompnentsMappedForStyleRmSkus -->
+        <test-method status="SKIP" signature="getStyleMaintenanceDetails(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getStyleMaintenanceDetails" duration-ms="0" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updateJsonWithTestData(TestAutomationUtil.java:146)
+at com.schemaxtech.testAutomationFramework.TestAutomationUtil.updatJsonWithTestDataMaster(TestAutomationUtil.java:284)
+at com.schemaxtech.testAutomationFrameworkTest.SMS.sampleDataProvider1(SMS.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStyleMaintenanceDetails -->
+        <test-method status="PASS" signature="saveStyleMaintenanceDetails(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:3, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="saveStyleMaintenanceDetails" duration-ms="64" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"data":{"operations":[{"operationCode":"string","operationName":"string","mainOperationCode":"string","smv":0,"operationCategory":"string"}],"size":23,"referenceNumber":24,"rawMaterials":[{"rmWastage":0,"rmDescription":"string","rmSku":"string","rmSequence":"string","rmYY":0}],"finishedGoodColor":"TSHIRT-slimfit","style":"Demoshirts"},"style":"PSPK08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveStyleMaintenanceDetails -->
+        <test-method status="PASS" signature="getColorSizeReferencesForStyle(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:4, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getColorSizeReferencesForStyle" duration-ms="60" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getColorSizeReferencesForStyle -->
+        <test-method status="PASS" signature="getColorsForStyles(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getColorsForStyles" duration-ms="55" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getColorsForStyles -->
+        <test-method status="PASS" signature="getJobOperationsForStyleColor(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getJobOperationsForStyleColor" duration-ms="58" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getJobOperationsForStyleColor -->
+        <test-method status="PASS" signature="getSizeRmDetailsforStyleColor(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="getSizeRmDetailsforStyleColor" duration-ms="60" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSizeRmDetailsforStyleColor -->
+        <test-method status="FAIL" signature="saveStyleInfo(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="saveStyleInfo" duration-ms="59" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
               </value>
             </param>
           </params>
@@ -948,7 +330,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.schemaxtech.testAutomationFramework.TestAutomationUtil.verifyResponse(TestAutomationUtil.java:323)
-at com.schemaxtech.testAutomationFrameworkTest.WorkstationT.createWorkstation(WorkstationT.java:136)
+at com.schemaxtech.testAutomationFrameworkTest.SMS.saveStyleInfo(SMS.java:274)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -979,8 +361,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createWorkstation -->
-      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.WorkstationT -->
+        </test-method> <!-- saveStyleInfo -->
+        <test-method status="PASS" signature="setIdentifiedStatusForStyle(java.lang.String, org.json.JSONObject, java.util.Map, java.util.Map)[pri:5, instance:com.schemaxtech.testAutomationFrameworkTest.SMS@6f1fba17]" name="setIdentifiedStatusForStyle" duration-ms="59" started-at="2020-01-08T12:32:30Z" data-provider="sampleDataProviderget" finished-at="2020-01-08T12:32:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tc_001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{"style":"pspk08"}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{status=true}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[{status=status}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setIdentifiedStatusForStyle -->
+      </class> <!-- com.schemaxtech.testAutomationFrameworkTest.SMS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,26 @@
+{
+  "data": {
+    "style": "string",
+    "finishedGoodColor": "string",
+    "size": "string",
+    "referenceNumber": "string",
+    "operations": [
+      {
+        "operationCode": "string",
+        "operationName": "string",
+        "mainOperationCode": "string",
+        "smv": 0,
+        "operationCategory": "string"
+      }
+    ],
+    "rawMaterials": [
+      {
+        "rmSequence": "string",
+        "rmSku": "string",
+        "rmDescription": "string",
+        "rmYY": 0,
+        "rmWastage": 0
+      }
+    ]
+  }
+}

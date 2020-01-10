@@ -1,0 +1,19 @@
+{
+  "_id": "string",
+  "garment_category": "string",
+  "garment_description": "string",
+  "garment_image": "string",
+  "fabric_category_components": [
+    {
+      "category_code": "string",
+      "category_desc": "string",
+      "status": "string",
+      "components": [
+        {
+          "component_code": "string",
+          "component_desc": "string"
+        }
+      ]
+    }
+  ]
+}

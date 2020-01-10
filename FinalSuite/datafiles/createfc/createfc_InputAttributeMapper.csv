@@ -1,0 +1,7 @@
+Attribute,AttributePath
+garment_category,garment_category
+garment_description,garment_description
+category_code1,fabric_category_components/category_code
+category_desc1,fabric_category_components/category_desc
+component_code,components/component_code
+component_desc,components/component_desc

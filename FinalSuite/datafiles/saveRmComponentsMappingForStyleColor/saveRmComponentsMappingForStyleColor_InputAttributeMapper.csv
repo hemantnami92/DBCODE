@@ -1,0 +1,6 @@
+Attribute,AttributePath
+style,style
+color,color
+rm_sku,rm_mapping/rm_sku
+rm_seq,rm_mapping/rm_seq
+components,rm_mapping/components

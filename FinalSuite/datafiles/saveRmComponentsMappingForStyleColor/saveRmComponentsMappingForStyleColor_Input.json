@@ -1,0 +1,13 @@
+{
+  "style": "string",
+  "color": "string",
+  "rm_mapping": [
+    {
+      "rm_sku": "string",
+      "rm_seq": "string",
+      "components": [
+        "string"
+      ]
+    }
+  ]
+}

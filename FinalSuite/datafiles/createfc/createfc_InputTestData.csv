@@ -1,0 +1,2 @@
+TestCase_Id,garment_category,garment_description,category_code1,category_desc1,component_code,component_desc
+Tc_001,Demoshirts,TSHIRT-slimfit,{0=sam},{0=samm{{XS}}},{0=sammy{{XS}}},{0=sammyy{{XS}}}

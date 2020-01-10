@@ -134,7 +134,7 @@ public class PPS {
 
 		}
 		
-	 /*@SuppressWarnings("rawtypes")
+	 @SuppressWarnings("rawtypes")
 	@Test(dataProvider = "sampleDataProviderget", priority = 2)
 	public void getPo(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
 			Map<String, String> responseAttributePaths) throws Exception {
@@ -145,7 +145,7 @@ public class PPS {
 			}
 	
 		@SuppressWarnings("rawtypes")
-		@Test(dataProvider = "sampleDataProviderget", priority = 2)
+		@Test(dataProvider = "sampleDataProviderget", enabled=false)
 		public void deleteMasterProductionOrder(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
 				Map<String, String> responseAttributePaths) throws Exception {
 
@@ -156,7 +156,7 @@ public class PPS {
 	
 	
 		@SuppressWarnings("rawtypes")
-		@Test(dataProvider = "sampleDataProviderget", priority = 2)
+		@Test(dataProvider = "sampleDataProviderget", priority = 3)
 		public void getColorsForStyle(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
 				Map<String, String> responseAttributePaths) throws Exception {
 
@@ -169,7 +169,7 @@ public class PPS {
 		
 		
 		@SuppressWarnings("rawtypes")
-		@Test(dataProvider = "sampleDataProviderget", priority = 2)
+		@Test(dataProvider = "sampleDataProviderget", priority = 4)
 		public void getUnhandledManufacturingOrders(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
 				Map<String, String> responseAttributePaths) throws Exception {
 
@@ -177,7 +177,7 @@ public class PPS {
 					"MasterProductionOrderController/getColorsForStyle", requestJsonObject.put("style", style).put("color", color));
 			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
 				}	
-		*/
+		
 		
 		
 //////////////////////////////////////////	 MasterPoMaxPlies        //////////////////////////////////////////////
@@ -219,6 +219,127 @@ public class PPS {
 	
 */
 	
+//		productionOrderCreation
+		
+		/////////////////////   ProductionOrderCreationController //////////////////////////////
+		
+		
+
+			
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 4)
+		public void productionOrderCreation(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+			requestJsonObject.getJSONArray("po_details_size_quantities").getJSONObject(0).put("master_po_details_id", master_po_details_i);
+			requestJsonObject.getJSONArray("color_ratios").getJSONObject(0).put("master_po_details_id", master_po_details_i);
+			requestJsonObject.put("master_po_details_id", master_po_details_i);
+			requestJsonObject.put("master_po_number", master_po);
+			requestJsonObject.remove("po_number");
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/productionOrderCreation", requestJsonObject);
+				//System.out.println("the chcick3"+requestJsonObject.getJSONArray("po_details_size_quantities"));
+			//po_number=((JSONObject) (TestAutomationUtil.getJsonObject(response)).getJSONArray("sub_pos").getJSONObject(0).get("po_number"));
+			
+
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+			JSONObject po=(JSONObject) ((JSONObject) (TestAutomationUtil.getJsonObject(response)).get("data")).get("data");
+			po_number=po.getJSONArray("sub_pos").getJSONObject(0).get("po_number");
+
+		}	
+		
+		
+		
+		
+		
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 5)
+		public void updateProductionOrder(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+			requestJsonObject.getJSONArray("po_details_size_quantities").getJSONObject(0).put("master_po_details_id", master_po_details_i);
+			requestJsonObject.getJSONArray("color_ratios").getJSONObject(0).put("master_po_details_id", master_po_details_i);
+			requestJsonObject.put("master_po_number", master_po);
+			requestJsonObject.put("po_number",po_number);
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/updateProductionOrder", requestJsonObject);
+				
+
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+			System.out.println("The chcick is"+response.asString());
+		}	
+			
+			
+			
+			
+			
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 6)
+		public void getMasterAndSubPoSizeWiseQuantitiesByMasterPo(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/getMasterAndSubPoSizeWiseQuantitiesByMasterPo", requestJsonObject.put("master_po_number", master_po));
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+				
+		}
+		
+		
+		
+		
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 7)
+		public void getMasterPoDetails(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/getMasterPoDetails", requestJsonObject.put("master_po_number", master_po));
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+				
+		}
+		
+		
+		
+		
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 8)
+		public void getsubPoDetailsWithMasterPo(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+			requestJsonObject.put("master_po_number", master_po);
+			requestJsonObject.put("po_number",po_number);
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/getsubPoDetailsWithMasterPo", requestJsonObject);
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+				
+		}
+			
+			
+			
+			
+		
+		
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 9)
+		public void createSubProductionOrder(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+			requestJsonObject.put("master_po_number", master_po);
+			requestJsonObject.put("po_number",po_number);
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/createSubProductionOrder", requestJsonObject);
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+				
+		}
+			
+			
+		@SuppressWarnings("rawtypes")
+		@Test(dataProvider = "sampleDataProviderget", priority = 9)
+		public void getMasterPoStyleColorsDetails(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
+				Map<String, String> responseAttributePaths) throws Exception {
+			requestJsonObject.put("master_po_number", master_po);
+			ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+					"ProductionOrderCreationController/getMasterPoStyleColorsDetails", requestJsonObject);
+			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
+				
+		}
+			
 //////////////////////////////////////////    MasterPoMaxPlies        //////////////////////////////////////////////
 
 		
@@ -242,7 +363,7 @@ public class PPS {
 			TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
 				}	
 		
-		*/
+		
 	
 	
 	@SuppressWarnings("rawtypes")
@@ -260,7 +381,7 @@ public class PPS {
 		System.out.println("The master_po_details_i is "+master_po_details_i);
 	
 	}
-		
+	*/	
 	
 	
 	/////////////////////////     MasterPoPackingMethodController /////////////////////////////////////////
@@ -268,11 +389,11 @@ public class PPS {
 	
 	
 	
-/*	@SuppressWarnings("rawtypes")
+	@SuppressWarnings("rawtypes")
 	@Test(dataProvider = "sampleDataProviderget", priority =4)
 	public void addCartonDefinition(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
 			Map<String, String> responseAttributePaths) throws Exception {
-		/*JSONArray testarray = requestJsonObject.getJSONArray("masterCartonInfo");
+		JSONArray testarray = requestJsonObject.getJSONArray("masterCartonInfo");
 		
 		for(int i=0; i < testarray.length(); i++) {
 			JSONObject itemArr = (JSONObject)testarray.get(i);
@@ -282,7 +403,7 @@ public class PPS {
 				
 			}
 			JSONArray polybagTypes = ((JSONObject) itemArr.getJSONArray("polybagTypes").get(i)).getJSONArray("polybagTypeDetails");
-			polybagTypes.put("master_po_details_id", 123456);
+			//polybagTypes.put("master_po_details_id", 123456);
 
 			if(polybagTypes.length() >1) {
 				
@@ -291,147 +412,24 @@ public class PPS {
 				//polybagTypes.put("master_po_details_id", 123456);
 			}
 			System.out.println("itemarray is"+itemArr);
-		}*/
+		}
 	//	System.out.println("First"+((JSONObject)requestJsonObject.getJSONObject("masterCartonInfo")).put("master_po_number", 123));
 		//System.out.println("second"+requestJsonObject.getJSONArray("polybagTypes"));
 
-//		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-	//			"MasterPoPackingMethodController/addCartonDefinition", requestJsonObject);
-	//	TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-
-	
-	//}
-	
-	
-//	productionOrderCreation
-	
-	/////////////////////   ProductionOrderCreationController //////////////////////////////
-	
-	
-	
-	
-	
-		
-		
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 4)
-	public void productionOrderCreation(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-		requestJsonObject.getJSONArray("po_details_size_quantities").getJSONObject(0).put("master_po_details_id", master_po_details_i);
-		requestJsonObject.getJSONArray("color_ratios").getJSONObject(0).put("master_po_details_id", master_po_details_i);
-		requestJsonObject.put("master_po_details_id", master_po_details_i);
-		requestJsonObject.put("master_po_number", master_po);
-		requestJsonObject.remove("po_number");
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/productionOrderCreation", requestJsonObject);
-			//System.out.println("the chcick3"+requestJsonObject.getJSONArray("po_details_size_quantities"));
-		//po_number=((JSONObject) (TestAutomationUtil.getJsonObject(response)).getJSONArray("sub_pos").getJSONObject(0).get("po_number"));
-		
-
+	ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
+			"MasterPoPackingMethodController/addCartonDefinition", requestJsonObject);
 		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-		JSONObject po=(JSONObject) ((JSONObject) (TestAutomationUtil.getJsonObject(response)).get("data")).get("data");
-		po_number=po.getJSONArray("sub_pos").getJSONObject(0).get("po_number");
 
-	}	
 	
-	
-	
-	
-	
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 5)
-	public void updateProductionOrder(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-		requestJsonObject.getJSONArray("po_details_size_quantities").getJSONObject(0).put("master_po_details_id", master_po_details_i);
-		requestJsonObject.getJSONArray("color_ratios").getJSONObject(0).put("master_po_details_id", master_po_details_i);
-		requestJsonObject.put("master_po_number", master_po);
-		requestJsonObject.put("po_number",po_number);
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/updateProductionOrder", requestJsonObject);
-			
-
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-		System.out.println("The chcick is"+response.asString());
-	}	
-		
-		
-		
-		
-		
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 6)
-	public void getMasterAndSubPoSizeWiseQuantitiesByMasterPo(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/getMasterAndSubPoSizeWiseQuantitiesByMasterPo", requestJsonObject.put("master_po_number", master_po));
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-			
 	}
 	
 	
-	
-	
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 7)
-	public void getMasterPoDetails(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
 
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/getMasterPoDetails", requestJsonObject.put("master_po_number", master_po));
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-			
-	}
-	
-	
-	
-	
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 8)
-	public void getsubPoDetailsWithMasterPo(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-		requestJsonObject.put("master_po_number", master_po);
-		requestJsonObject.put("po_number",po_number);
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/getsubPoDetailsWithMasterPo", requestJsonObject);
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-			
-	}
 		
 		
 		
 		
-	
-	
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 9)
-	public void createSubProductionOrder(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-		requestJsonObject.put("master_po_number", master_po);
-		requestJsonObject.put("po_number",po_number);
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/createSubProductionOrder", requestJsonObject);
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-			
-	}
-		
-		
-	@SuppressWarnings("rawtypes")
-	@Test(dataProvider = "sampleDataProviderget", priority = 9)
-	public void getMasterPoStyleColorsDetails(String testCase, JSONObject requestJsonObject, Map<String, Object> expectedAttributeValues,
-			Map<String, String> responseAttributePaths) throws Exception {
-		requestJsonObject.put("master_po_number", master_po);
-		ResponseBody response = TestAutomationUtil.methodForPost(TestAutomationUtil.getPropertyByName("PPS"),
-				"ProductionOrderCreationController/getMasterPoStyleColorsDetails", requestJsonObject);
-		TestAutomationUtil.verifyResponse(response, expectedAttributeValues, responseAttributePaths);
-			
-	}
-		
-		
-		
-		
-		
-		
+		///
 	
 	
 	
